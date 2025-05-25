@@ -6,7 +6,7 @@
     <link href="/images/logo.png" rel="icon" sizes="32x32" type="image/png"/>
     <link href="/images/logo.png" rel="icon" sizes="16x16" type="image/png"/>
     <link href="/images/fav/site.webmanifest" rel="manifest"/>
-    <title>404 Page not found | erlebeErbe</title>
+    <title> | erlebeErbe</title>
     
     <link href="/css/styles.css" rel="stylesheet"/>
     <link href="/css/custom.css" rel="stylesheet"/>
@@ -38,12 +38,113 @@
     </nav>
 </header>
 
-<main style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 60vh; text-align: center; padding: 20px;">
-    <h1 style="font-size: 5em; font-weight: bold;">404</h1>
-    <p style="font-size: 1.5em;">Oops! We can't seem to find the page you are looking for.</p>
-    <p style="margin-top: 20px; font-size: 1.2em;">Here's a little map to help you get back on track:</p>
-    <a href="/" style="padding: 10px 20px; background-color: #b37c56; color: white; text-decoration: none; border-radius: 5px; margin-top: 10px;">Take Me Home</a>
-</main>
+    
+
+    <section class="hero"
+    id="heroSection" onload="adjustTextColor(this)">
+        <div>
+            <h1 class="p-name" id="textOverlay"></h1>
+        </div>
+    </section>
+    <main class="post h-entry container row">
+        <div class="post">
+            <div class="post-data row">
+                <time class="dt-published" datetime="0001-01-01 00:00:00 &#43;0000 UTC">
+                    <a class="u-url" href="http://localhost:1313/footer/_datenschutz/">Jan 1, 1</a>
+                </time>
+                <span rel="author" class="p-author h-card">
+                    <img class="u-photo hidden" src="" />
+                    <span class="p-name hidden" rel="me"></span>
+                </span>
+            </div>
+            <div class="e-content">
+                
+
+                
+            </div>
+        </div>
+        
+    </main>
+    <script>
+        function adjustTextColor(sectionId) {
+            const section = document.getElementById(sectionId);
+            const style = window.getComputedStyle(section);
+            const imageUrl = style
+                .backgroundImage
+                .slice(4, -1)
+                .replace(/["']/g, "");
+            const image = new Image();
+            image.src = imageUrl;
+            image.onload = function () {
+                const canvas = document.createElement('canvas');
+                const context = canvas.getContext('2d');
+                canvas.width = image.width;
+                canvas.height = image.height;
+                context.drawImage(image, 0, 0, image.width, image.height);
+                const imageData = context.getImageData(0, 0, canvas.width, canvas.height);
+                const data = imageData.data;
+                let r = 0,
+                    g = 0,
+                    b = 0;
+                for (let i = 0; i < data.length; i += 4) {
+                    r += data[i];
+                    g += data[i + 1];
+                    b += data[i + 2];
+                }
+                r /= (data.length / 4);
+                g /= (data.length / 4);
+                b /= (data.length / 4);
+                const brightness = Math.sqrt(0.299 * r * r + 0.587 * g * g + 0.114 * b * b);
+                const textColor = brightness > 128
+                    ? 'black'
+                    : 'white';
+                const shadowColor = brightness > 128
+                    ? 'rgba(255, 255, 255, 0.7)'
+                    : 'rgba(0, 0, 0, 0.7)';
+                const textOverlay = document.getElementById('textOverlay');
+                textOverlay.style.color = textColor;
+                textOverlay.style.textShadow = `0 0 5px ${shadowColor}, 0 0 10px ${shadowColor}, 0 0 20px ${shadowColor}, 0 0 40px ${shadowColor}, 0 0 80px ${shadowColor}, 0 0 90px ${shadowColor}, 0 0 100px ${shadowColor}, 0 0 150px ${shadowColor}`;
+            };
+        }
+        
+        adjustTextColor('heroSection');
+    </script>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    const id = entry
+                        .target
+                        .getAttribute('id');
+
+                    if (entry.intersectionRatio > 0) {
+                        clearActiveStatesInTableOfContents();
+                        document
+                            .querySelector(`nav li a[href="#${id}"]`)
+                            .parentElement
+                            .classList
+                            .add('active');
+                    }
+                });
+            });
+            document
+                .querySelectorAll('h1[id],h2[id],h3[id],h4[id]')
+                .forEach((section) => {
+                    observerForTableOfContentActiveState.observe(section);
+                });
+
+        });
+
+        function clearActiveStatesInTableOfContents() {
+            document
+                .querySelectorAll('nav li')
+                .forEach((section) => {
+                    section
+                        .classList
+                        .remove('active');
+                });
+        }
+    </script>
 <footer>
 
  <div class="footer-container">
@@ -66,24 +167,6 @@
 
     <script>
     window.store = {
-    
-    
-    "http:\/\/localhost:1313\/footer\/": {
-        
-        "title": "",
-            "tags": [],
-    "content": "impressum\nAngaben gemäß § 5 TMG A. Bebynek-Bielanska Kappenzipfelgasse 8\n87719 Mindelheim\nDeutschland\nE-Mail: info@erlebeerbe.com Berufsbezeichnung und berufsrechtliche Regelungen Berufsbezeichnung: Architektin\nZuständige Kammer:\nBayerische Architektenkammer\nWaisenhausstr. 4\n80637 München Verliehen in: Deutschland\nMitgliedsnummer: 194269\n", 
-    "url": "http:\/\/localhost:1313\/footer\/"
-        },
-    
-    
-    "http:\/\/localhost:1313\/footer\/datenschutz\/": {
-        
-        "title": "Datenschutz",
-            "tags": [],
-    "content": "Datenschutz\nDer Verantwortliche im Sinne der Datenschutz-Grundverordnung (DSGVO) und anderer nationaler Datenschutzgesetze ist:\nA. Bebynek-Bielanska\nKappenzipfelgasse 8\n87719 Mindelheim\nDeutschland\nE-Mail: info@erlebeerbe.com\nUm Ihren Besuch so benutzerfreundlich wie möglich zu gestalten und sämtliche verfügbaren Funktionen anbieten zu können, erheben wir eine Reihe von Daten und Informationen des Geräts, mit dem Sie unsere Website aufgerufen haben. Dabei handelt es sich um folgende Daten: IP-Adresse, Betriebssystem, Browsertyp und -version, Datum und Uhrzeit des Zugriffs und Ähnliches. Eine Auswertung dieser Daten zu Marketingzwecken findet in diesem Zusammenhang nicht statt.\nAlle personenbezogenen Daten, die wir während Ihres Besuchs durch den Einsatz von Sitzungs-Cookies gesammelt haben, werden automatisch gelöscht, sobald der Zweck für ihre Erhebung erfüllt ist. Die Sitzungsdaten werden demnach so lange gespeichert, bis Sie Ihre Sitzung beenden (durch das Verlassen bzw. Schließen der Website).\nIm Sinne der DSGVO zählen Sie als Betroffener, wenn personenbezogene Daten, die Sie betreffen, von uns verarbeitet werden. Aus diesem Grund können Sie von verschiedenen Betroffenenrechten Gebrauch machen, die in der Datenschutz-Grundverordnung verankert sind. Hierbei handelt es sich um das Auskunftsrecht (Artikel 15 DSGVO), das Recht auf Berichtigung (Artikel 16 DSGVO), das Recht auf Löschung (Artikel 17 DSGVO), das Recht auf Einschränkung der Verarbeitung (Artikel 18 DSGVO), das Widerspruchsrecht (Artikel 21 DSGVO), das Recht auf Beschwerde bei einer Aufsichtsbehörde (Artikel 77 DSGVO) sowie das Recht auf Datenübertragbarkeit (Artikel 20 DSGVO).\nÄnderung unserer Datenschutzbestimmungen Wir behalten uns vor, diese Datenschutzerklärung gelegentlich anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht.\nFragen zum Datenschutz Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail an info@erlebeerbe.com\n", 
-    "url": "http:\/\/localhost:1313\/footer\/datenschutz\/"
-        },
     
     
     "http:\/\/localhost:1313\/bauprodukt\/": {
@@ -137,6 +220,24 @@
             "tags": [],
     "content": "status\nerlebeErbe ist ein Start-up in der Gründungsphase, das Architekten und Planer sowie Eigentümer denkmalgeschützter Gebäude bei der Planung nachhaltiger Baumaßnahmen und der Umsetzung innovativer Lösungen und neuer Technologien unterstützt. mission\nGebäude sind Zeugen unserer Vergangenheit und erzählen unsere Geschichte. Mir ist es wichtig, dass die wertvolle Bausubstanz erhalten bleibt, vor allem jetzt angesichts der aktuellen Klimasituation und der negativen Umweltauswirkungen der Baubranche. Ich bin sehr davon überzeugt, dass der sorgfältige Umgang mit denkmalgeschützten Gebäuden ein Indikator für den Umgang mit dem gesamten Baubestand sein sollte.\n", 
     "url": "http:\/\/localhost:1313\/about\/"
+        },
+    
+    
+    "http:\/\/localhost:1313\/footer\/_datenschutz\/": {
+        
+        "title": "",
+            "tags": [],
+    "content": "", 
+    "url": "http:\/\/localhost:1313\/footer\/_datenschutz\/"
+        },
+    
+    
+    "http:\/\/localhost:1313\/footer\/": {
+        
+        "title": "",
+            "tags": [],
+    "content": "impressum\nAngaben gemäß § 5 TMG A. Bebynek-Bielanska Kappenzipfelgasse 8\n87719 Mindelheim\nDeutschland\nE-Mail: info@erlebeerbe.com Berufsbezeichnung und berufsrechtliche Regelungen Berufsbezeichnung: Architektin\nZuständige Kammer:\nBayerische Architektenkammer\nWaisenhausstr. 4\n80637 München Verliehen in: Deutschland\nMitgliedsnummer: 194269\n", 
+    "url": "http:\/\/localhost:1313\/footer\/"
         },
     
     

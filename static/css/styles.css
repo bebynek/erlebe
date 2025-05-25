@@ -627,3 +627,8 @@ code {
     justify-content: space-between;
     padding: 1rem;
 }
+
+.small-text {
+    font-size: 12px;
+    line-height: 1.0;
+}
