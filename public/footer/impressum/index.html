@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="/images/logo.png" rel="apple-touch-icon" sizes="180x180"/>
+    <link href="/images/logo.png" rel="icon" sizes="32x32" type="image/png"/>
+    <link href="/images/logo.png" rel="icon" sizes="16x16" type="image/png"/>
+    <link href="/images/fav/site.webmanifest" rel="manifest"/>
+    <title> | erlebeErbe</title>
+    
+    <link href="/css/styles.css" rel="stylesheet"/>
+    <link href="/css/custom.css" rel="stylesheet"/>
+    
+</head>
+
+
+<body><header>
+    <div class="logo h-card">
+        <a class="u-url" href="http://localhost:1313/">
+            <img alt="Site Logo" class="site-logo u-photo" src="/images/logo.png"/>
+        </a>
+    </div>
+    <nav class="menu">
+        <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/bauwerk/">Bauwerke</a>
+                </li>
+                <li>
+                    <a href="/bauprodukt/">Bauprodukte</a>
+                </li>
+                <li>
+                    <a href="/about/">About</a>
+                </li>
+        </ul>
+    </nav>
+</header>
+
+    
+
+    <section class="hero"
+    id="heroSection" onload="adjustTextColor(this)">
+        <div>
+            <h1 class="p-name" id="textOverlay"></h1>
+        </div>
+    </section>
+    <main class="post h-entry container row">
+        <div class="post">
+            <div class="post-data row">
+                <time class="dt-published" datetime="0001-01-01 00:00:00 &#43;0000 UTC">
+                    <a class="u-url" href="http://localhost:1313/footer/impressum/">Jan 1, 1</a>
+                </time>
+                <span rel="author" class="p-author h-card">
+                    <img class="u-photo hidden" src="" />
+                    <span class="p-name hidden" rel="me"></span>
+                </span>
+            </div>
+            <div class="e-content">
+                
+
+                
+            </div>
+        </div>
+        
+    </main>
+    <script>
+        function adjustTextColor(sectionId) {
+            const section = document.getElementById(sectionId);
+            const style = window.getComputedStyle(section);
+            const imageUrl = style
+                .backgroundImage
+                .slice(4, -1)
+                .replace(/["']/g, "");
+            const image = new Image();
+            image.src = imageUrl;
+            image.onload = function () {
+                const canvas = document.createElement('canvas');
+                const context = canvas.getContext('2d');
+                canvas.width = image.width;
+                canvas.height = image.height;
+                context.drawImage(image, 0, 0, image.width, image.height);
+                const imageData = context.getImageData(0, 0, canvas.width, canvas.height);
+                const data = imageData.data;
+                let r = 0,
+                    g = 0,
+                    b = 0;
+                for (let i = 0; i < data.length; i += 4) {
+                    r += data[i];
+                    g += data[i + 1];
+                    b += data[i + 2];
+                }
+                r /= (data.length / 4);
+                g /= (data.length / 4);
+                b /= (data.length / 4);
+                const brightness = Math.sqrt(0.299 * r * r + 0.587 * g * g + 0.114 * b * b);
+                const textColor = brightness > 128
+                    ? 'black'
+                    : 'white';
+                const shadowColor = brightness > 128
+                    ? 'rgba(255, 255, 255, 0.7)'
+                    : 'rgba(0, 0, 0, 0.7)';
+                const textOverlay = document.getElementById('textOverlay');
+                textOverlay.style.color = textColor;
+                textOverlay.style.textShadow = `0 0 5px ${shadowColor}, 0 0 10px ${shadowColor}, 0 0 20px ${shadowColor}, 0 0 40px ${shadowColor}, 0 0 80px ${shadowColor}, 0 0 90px ${shadowColor}, 0 0 100px ${shadowColor}, 0 0 150px ${shadowColor}`;
+            };
+        }
+        
+        adjustTextColor('heroSection');
+    </script>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    const id = entry
+                        .target
+                        .getAttribute('id');
+
+                    if (entry.intersectionRatio > 0) {
+                        clearActiveStatesInTableOfContents();
+                        document
+                            .querySelector(`nav li a[href="#${id}"]`)
+                            .parentElement
+                            .classList
+                            .add('active');
+                    }
+                });
+            });
+            document
+                .querySelectorAll('h1[id],h2[id],h3[id],h4[id]')
+                .forEach((section) => {
+                    observerForTableOfContentActiveState.observe(section);
+                });
+
+        });
+
+        function clearActiveStatesInTableOfContents() {
+            document
+                .querySelectorAll('nav li')
+                .forEach((section) => {
+                    section
+                        .classList
+                        .remove('active');
+                });
+        }
+    </script>
+<footer>
+
+      <nav>
+    <ul>
+      
+        <li><a href="/">Impressum</a></li>
+      
+        <li><a href="/about/">Datenschutz</a></li>
+      
+    </ul>
+  </nav>
+
+    <div class="logo h-card">
+
+        <p>© 2025
+            erlebeErbe</p>
+    </div>
+
+    <script>
+    window.store = {
+    
+    
+    "http:\/\/localhost:1313\/bauprodukt\/": {
+        
+        "title": "Bauprodukt",
+            "tags": [],
+    "content": "", 
+    "url": "http:\/\/localhost:1313\/bauprodukt\/"
+        },
+    
+    
+    "http:\/\/localhost:1313\/bauprodukt\/fenster-ff\/": {
+        
+        "title": "Historisierende Holzfenster",
+            "tags": [],
+    "content": "Achtung : fiktives Produkt, eventuelle Ähnlichkeiten mit realen Produkten / Firmen sind zufällig und nicht beabsichtigt.\nHistorisierende Holzfenster für Sanierung von Altbauten mit hohen Ansprüchen an Qualität, Ästhetik und Energieeffizienz.\nPreisanfrage\nTechnisches Datenblatt\nAusschreibungstext\n", 
+    "url": "http:\/\/localhost:1313\/bauprodukt\/fenster-ff\/"
+        },
+    
+    
+    "http:\/\/localhost:1313\/bauwerk\/": {
+        
+        "title": "Bauwerk",
+            "tags": [],
+    "content": "", 
+    "url": "http:\/\/localhost:1313\/bauwerk\/"
+        },
+    
+    
+    "http:\/\/localhost:1313\/": {
+        
+        "title": "erlebeErbe",
+            "tags": [],
+    "content": "Pilot Version\nEine Platform für Denkmalpflege und Bauen im Bestand. Entdecke einzigartige Restaurierungsprojekte weltweit. Erfahre mehr über neue Produkte, Technologien und Innovationen am Markt. Und vor allem: erlebeErbe\n", 
+    "url": "http:\/\/localhost:1313\/"
+        },
+    
+    
+    "http:\/\/localhost:1313\/bauwerk\/villa-v\/": {
+        
+        "title": "Villa V",
+            "tags": [],
+    "content": "Achtung : fiktives Projekt, eventuelle Ähnlichkeiten mit realen Personen / Firmen sind zufällig und nicht beabsichtigt.\nMit großem Engagement sanierte eine Rentnerin aus Bayern eine Villa aus dem späten 20. Jahrhundert und bewahrte sie so vor dem Verfall. Darüber hinaus wurde das Gebäude energetisch modernisiert und bietet nach Abschluss der Maßnahmen ein komfortables und behagliches Zuhause.\nDie Villa stand über mehrere Jahrzehnte verlassen, bis sich Frau F, eine engagierte Rentnerin aus der Region, ihrer annahm. Mit Unterstützung eines Teams aus Fachplanern wurde die Sanierung sorgfältig geplant und gemeinsam mit erfahrenen Handwerkern durchgeführt.\nDas Mauerwerk wurde punktuell ertüchtigt, der Dachstuhl umfassend saniert. Das Dach wurde zusätzlich gedämmt und neu eingedeckt. Die historischen Fenster wurden fachgerecht restauriert. Zur Verbesserung der Energieeffizienz wurden im Innenbereich zusätzliche Vorfenster eingebaut.\nFrau F zeigt die liebevoll sanierte Villa mit großer Freude und möchte damit andere für den Erhalt von Denkmälern begeistern. Den großen Garten stellt sie gerne für lokale Veranstaltungen zur Verfügung, in der Hoffnung, dass möglichst viele Menschen die Villa erleben und genießen können.\nEnergetische Sanierung\nU-Werte:\nFassade, Fenster, Dach, Bodenplatte gegen Erdreich\nDurchschnitt: XXX\nHeiztechnik: XXX\nPrimärenergiebedarf: XXX\nFakten\nBauherr: privat\nArchitektur: Architekt XXX\nBaujahr: 1907\nFertigstellung Sanierung: 2024\nWohnfläche: 76 m2\nBaukosten (brutto): XXX EUR\nVerwendete Produkte\nBauprodukt 1\nBauprodukt 2\n", 
+    "url": "http:\/\/localhost:1313\/bauwerk\/villa-v\/"
+        },
+    
+    
+    "http:\/\/localhost:1313\/about\/": {
+        
+        "title": "",
+            "tags": [],
+    "content": "status\nerlebeErbe ist ein Start-up in der Gründungsphase, das Architekten und Planer sowie Eigentümer denkmalgeschützter Gebäude bei der Planung nachhaltiger Baumaßnahmen und der Umsetzung innovativer Lösungen und neuer Technologien unterstützt. mission\nGebäude sind Zeugen unserer Vergangenheit und erzählen unsere Geschichte. Mir ist es wichtig, dass die wertvolle Bausubstanz erhalten bleibt, vor allem jetzt angesichts der aktuellen Klimasituation und der negativen Umweltauswirkungen der Baubranche. Ich bin sehr davon überzeugt, dass der sorgfältige Umgang mit denkmalgeschützten Gebäuden ein Indikator für den Umgang mit dem gesamten Baubestand sein sollte.\n", 
+    "url": "http:\/\/localhost:1313\/about\/"
+        },
+    
+    
+    "http:\/\/localhost:1313\/footer\/impressum\/": {
+        
+        "title": "",
+            "tags": [],
+    "content": "", 
+    "url": "http:\/\/localhost:1313\/footer\/impressum\/"
+        },
+    
+    
+    "http:\/\/localhost:1313\/categories\/": {
+        
+        "title": "Categories",
+            "tags": [],
+    "content": "", 
+    "url": "http:\/\/localhost:1313\/categories\/"
+        },
+    
+    
+    "http:\/\/localhost:1313\/footer\/": {
+        
+        "title": "Footer",
+            "tags": [],
+    "content": "", 
+    "url": "http:\/\/localhost:1313\/footer\/"
+        },
+    
+    
+    "http:\/\/localhost:1313\/tags\/": {
+        
+        "title": "Tags",
+            "tags": [],
+    "content": "", 
+    "url": "http:\/\/localhost:1313\/tags\/"
+        },
+    
+    }
+</script>
+
+<script src="/js/lunr.min.js"></script>
+<script src="/js/search.js"></script>
+
+</footer></body>
+</html>
