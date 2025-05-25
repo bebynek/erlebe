@@ -1,8 +1,8 @@
 +++
-title = "Datenschutz"
-date = 2025-05-25
-url = "/footer/datenschutz/"
-layout = "list"
+url = "/datenschutz/"
+type = "legal"
+layout = "impressum"
+hideFromList = true
 +++
 **Datenschutz**
 

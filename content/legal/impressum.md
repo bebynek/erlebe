@@ -1,5 +1,8 @@
 +++
-layout = 'impressum'
+url = "/impressum/"
+type = "legal"
+layout = "impressum"
+hideFromList = true
 +++
 **Impressum**
 

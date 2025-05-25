@@ -1,47 +1,44 @@
-{{ $paginator := .Paginator }}
-{{ if .IsHome }}
-  {{ $posts := where .Site.RegularPages "Section" "blog" }}  <!-- Assuming 'content/blog' is the section for posts -->
-  {{ $paginator := .Paginate ($posts) }}
-{{ else }}
-  {{ $currentSection := .Section }}
-  {{ $posts := where .Site.Pages "Section" $currentSection }}
-  {{ $paginator := .Paginate ($posts) }}
-{{ end }}
+{{/* Prepare the list of posts to paginate */}}
+{{ $posts := cond .IsHome (where .Site.RegularPages "Section" "ne" "legal") (where .Site.RegularPages "Section" .Section) }}
+{{ $paginator := .Paginate $posts }}
+
 <div class="cards" id="results">
-    {{ range .Paginator.Pages }}
-        <div class="card h-entry">
-            <a href="{{ .Permalink }}" class="u-url">
-                {{ with .Params.image }}
-                    <img src="{{ . }}" alt="{{ $.Title }}" class="u-photo">
-                {{ else }}
-                    {{ partial "randImage" . }}
-                {{ end }}
-                <div class="text">
-                    <h2 class="p-name">{{ .Title }}</h2>
-                    <p class="small e-content">{{ .Summary | truncate 100 }}
-                    </p>
-                </div>
-            </a>
-        </div>
-    {{ end }}
-</div>
-<!-- Pagination links -->
-{{ if gt $paginator.TotalPages 1 }}
-    <div class="pagination">
-        {{ if $paginator.HasPrev }}
-            <a href="{{ $paginator.Prev.URL }}">before</a>
+  {{ range $paginator.Pages }}
+    {{ $page := . }}
+    <div class="card h-entry">
+      <a href="{{ $page.Permalink }}" class="u-url">
+        {{ with $page.Params.image }}
+          <img src="{{ . }}" alt="{{ $page.Title }}" class="u-photo">
         {{ else }}
-            <p></p>
+          {{ partial "randImage" $page }}
         {{ end }}
-        <div class="pages">
-            {{ range $paginator.Pagers }}
-                <a href="{{ .URL }}"{{ if eq . $paginator }} class="active"{{ end }}>{{ .PageNumber }}</a>
-            {{ end }}
+        <div class="text">
+          <h2 class="p-name">{{ $page.Title }}</h2>
+          <p class="small e-content">{{ $page.Summary | truncate 100 }}</p>
         </div>
-        {{ if $paginator.HasNext }}
-            <a href="{{ $paginator.Next.URL }}">more</a>
-        {{ else }}
-            <p></p>
-        {{ end }}
+      </a>
     </div>
+  {{ end }}
+</div>
+
+{{ if gt $paginator.TotalPages 1 }}
+  <div class="pagination">
+    {{ if $paginator.HasPrev }}
+      <a href="{{ $paginator.Prev.URL }}">before</a>
+    {{ else }}
+      <p></p>
+    {{ end }}
+
+    <div class="pages">
+      {{ range $paginator.Pagers }}
+        <a href="{{ .URL }}"{{ if eq . $paginator }} class="active"{{ end }}>{{ .PageNumber }}</a>
+      {{ end }}
+    </div>
+
+    {{ if $paginator.HasNext }}
+      <a href="{{ $paginator.Next.URL }}">more</a>
+    {{ else }}
+      <p></p>
+    {{ end }}
+  </div>
 {{ end }}

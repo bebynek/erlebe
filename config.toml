@@ -29,12 +29,12 @@ pluralizeListTitles = false
 
      [[menu.footer]]
     name = "Impressum"
-    url = "/footer/"
+    url = "/impressum/"
     weight = 1
 
   [[menu.footer]]
     name = "Datenschutz"
-    url = "/footer/"
+    url = "/datenschutz/"
     weight = 2
 
 
