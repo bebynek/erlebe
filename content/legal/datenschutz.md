@@ -33,10 +33,14 @@ Im Sinne der DSGVO zählen Sie als Betroffener, wenn personenbezogene Daten, die
 
 
 Änderung unserer Datenschutzbestimmungen
+
+
 Wir behalten uns vor, diese Datenschutzerklärung gelegentlich anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht.
 
 
 Fragen zum Datenschutz
+
+
 Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail an info@erlebeerbe.com
 
 

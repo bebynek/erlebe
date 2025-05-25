@@ -20,8 +20,15 @@ Das Mauerwerk wurde punktuell ertüchtigt, der Dachstuhl umfassend saniert. Das 
 Frau F zeigt die liebevoll sanierte Villa mit großer Freude und möchte damit andere für den Erhalt von Denkmälern begeistern. Den großen Garten stellt sie gerne für lokale Veranstaltungen zur Verfügung, in der Hoffnung, dass möglichst viele Menschen die Villa erleben und genießen können.
 
 
+<figure style="margin: 0; width: fit-content;">
+  <img src="/images/villav2.jpg" alt="Villa V" style="width: 100%; height: auto; display: block;">
+  <figcaption style="font-size: 12px; text-align: right; margin-top: 0.3em;">
+    KI-generiertes Bild (Leonardo AI)
+  </figcaption>
+</figure>
 
-![Villa V](/images/villav2.jpg)
+<br>
+<br>
 
 
 **Energetische Sanierung**
@@ -36,26 +43,23 @@ Heiztechnik: XXX
 
 Primärenergiebedarf: XXX
 
+<br>
+<br>
+
+
 **Fakten**
 
-Bauherr: privat
+{{< table rows="Bauherr: privat|Architektur: Architekt XXX;Baujahr: 1907|Fertigstellung Sanierung: 2024;Wohnfläche: 76 m2|Baukosten (brutto): XXX EUR" >}}
 
-Architektur: Architekt XXX
-
-Baujahr: 1907
-
-Fertigstellung Sanierung: 2024
-
-Wohnfläche: 76 m2
-
-Baukosten (brutto): XXX EUR
-
-
+<br>
+<br>
 
 **Verwendete Produkte**
 
-<u>Bauprodukt 1</u>
 
-<u>Bauprodukt 2</u>
+[Historisierende Holzfenster]({{< ref "Fenster-FF.md" >}})
+
+
+
 
 
