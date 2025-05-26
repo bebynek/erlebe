@@ -4,10 +4,8 @@ type = "legal"
 layout = "impressum"
 hideFromList = true
 +++
-<div class="narrow">
 
 **Impressum**
-
 
 
 <div class="small-text">

@@ -4,10 +4,7 @@ type = "legal"
 layout = "impressum"
 hideFromList = true
 +++
-<div class="narrow">
-
 **Datenschutz**
-
 
 
 <div class="small-text">
@@ -33,7 +30,9 @@ Wir behalten uns vor, diese Datenschutzerklärung gelegentlich anzupassen, damit
 Fragen zum Datenschutz
 
 
-Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail an info@erlebeerbe.com
+Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail an info@erlebeerbe.com.
 
+<br>
+<br>
 
 </div>
