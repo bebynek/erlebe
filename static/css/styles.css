@@ -655,3 +655,88 @@ th {
   max-width: 90%;
 }
 
+/* Added by Aga - Language */
+
+.language-dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.lang-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+  min-width: 120px;
+  z-index: 1000;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lang-menu li a {
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.lang-menu li a:hover {
+  background-color: #eee;
+}
+
+.language-dropdown:hover .lang-menu {
+  display: block;
+}
+nav ul li.lang-dropdown {
+  position: relative;
+  display: inline-block;
+  font-size: 1rem; /* Match menu font */
+}
+
+nav ul li.lang-dropdown > a {
+  cursor: pointer;
+  padding: 0.5rem;
+  font-weight: normal;
+}
+
+nav ul li.lang-dropdown ul.lang-submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--primary-bg);
+  box-shadow: 0px 8px 16px var(--shadow-color);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 999;
+  min-width: 100px;
+}
+
+nav ul li.lang-dropdown:hover ul.lang-submenu {
+  display: block;
+}
+
+nav ul li.lang-dropdown ul.lang-submenu li {
+  margin: 0;
+}
+
+nav ul li.lang-dropdown ul.lang-submenu li a {
+  padding: 0.5rem 1rem;
+  display: block;
+  color: var(--link-color);
+}
+
+nav ul li.lang-dropdown ul.lang-submenu li a:hover {
+  background-color: #eee;
+  color: var(--primary-text);
+}
