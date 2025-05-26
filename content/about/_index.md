@@ -1,12 +1,16 @@
 +++
 layout = 'about'
 +++
+
+<div class="narrow">
+
 <p style="font-size: 30px; font-weight: bold;">Hi, ich bin Aga</p>
 
 
 Ich bin Architektin mit einer großen Leidenschaft für die Denkmalpflege.
 Mein Architekturstudium absolvierte ich an der Universidad de Granada in Spanien. Im Rahmen von Austauschprogrammen konnte ich mein Fachwissen an der Technischen Universität Wien und der Loyola University in Chicago vertiefen.
-Ich verfüge über sieben Jahre Berufserfahrung in Architekturbüros in Österreich und Deutschland.
+Ich verfüge über sieben Jahre Berufserfahrung in Architekturbüros in Österreich und Deutschland. Aktuell führe ich mein eigenes Architekturbüro [bebynek architektur](https://bebynek.com) mit Sitz in Bayern.
+
 
 
 **mission**
@@ -21,7 +25,7 @@ das Architekten und Planer sowie Eigentümer denkmalgeschützter Gebäude bei de
 
 Das Projekt ist gefördert von
 
- <img src="/images/tha.png" alt="Aga" style="width: 40%; height: auto; display: block;">
+ <img src="/images/tha.png" alt="Aga" style="width: 50%; height: auto; display: block;">
 
 <br>
 
@@ -32,4 +36,7 @@ Ich suche Partnerschaften mit - Eigentümern denkmalgeschützter Gebäude - Arch
 
 <p>You can write me an <a href="mailto:info@erlebeerbe.com">email</a>.</p>
 
+<br>
+<br>
 
+</div>
