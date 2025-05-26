@@ -4,6 +4,8 @@ type = "legal"
 layout = "impressum"
 hideFromList = true
 +++
+<div class="narrow">
+
 **Impressum**
 
 
@@ -52,5 +54,7 @@ Verliehen in: Deutschland
 
 Mitgliedsnummer: 194269
 
+<br>
+<br>
 
 </div>

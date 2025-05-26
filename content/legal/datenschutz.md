@@ -4,23 +4,15 @@ type = "legal"
 layout = "impressum"
 hideFromList = true
 +++
+<div class="narrow">
+
 **Datenschutz**
 
 
 
 <div class="small-text">
 
-Der Verantwortliche im Sinne der Datenschutz-Grundverordnung (DSGVO) und anderer nationaler Datenschutzgesetze ist:
-
-A. Bebynek-Bielanska
-
-Kappenzipfelgasse 8
-
-87719 Mindelheim
-
-Deutschland
-
-E-Mail: info@erlebeerbe.com
+Der Verantwortliche im Sinne der Datenschutz-Grundverordnung (DSGVO) und anderer nationaler Datenschutzgesetze ist: A. Bebynek-Bielanska, Kappenzipfelgasse 8, 87719 Mindelheim, Deutschland, E-Mail: info@erlebeerbe.com.
 
 
 Um Ihren Besuch so benutzerfreundlich wie möglich zu gestalten und sämtliche verfügbaren Funktionen anbieten zu können, erheben wir eine Reihe von Daten und Informationen des Geräts, mit dem Sie unsere Website aufgerufen haben. Dabei handelt es sich um folgende Daten: IP-Adresse, Betriebssystem, Browsertyp und -version, Datum und Uhrzeit des Zugriffs und Ähnliches. Eine Auswertung dieser Daten zu Marketingzwecken findet in diesem Zusammenhang nicht statt.
