@@ -37,10 +37,6 @@
     <loc>http://localhost:1313/de/bauwerk/villa-v/</loc>
     <lastmod>2025-03-24T14:58:24+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/datenschutz/</loc>
-  </url><url>
-    <loc>http://localhost:1313/impressum/</loc>
-  </url><url>
     <loc>http://localhost:1313/about/</loc>
     <xhtml:link
                 rel="alternate"
@@ -52,6 +48,10 @@
                 hreflang="de-de"
                 href="http://localhost:1313/about/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/datenschutz/</loc>
+  </url><url>
+    <loc>http://localhost:1313/impressum/</loc>
   </url><url>
     <loc>http://localhost:1313/de/categories/</loc>
     <xhtml:link
