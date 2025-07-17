@@ -13,7 +13,7 @@ pluralizeListTitles = false
 
 
 [params]
-  contact = "You can write me an [email](mailto:info@erlebeerbe.com)."
+  contact = "Schreib mir eine [E-Mail](mailto:info@erlebeerbe.com)."
 
 
 [languages]

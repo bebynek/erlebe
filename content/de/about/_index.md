@@ -20,12 +20,17 @@ Gebäude sind Zeugen unserer Vergangenheit und erzählen unsere Geschichte. Mir 
 
 **status**
 
-**erlebeErbe** ist ein Start-up in der Gründungsphase, 
+**erlebeErbe** ist ein Projekt in der Gründungsphase, 
 das Architekten und Planer sowie Eigentümer denkmalgeschützter Gebäude bei der Planung nachhaltiger Baumaßnahmen und der Umsetzung innovativer Lösungen und neuer Technologien unterstützt. 
 
 Das Projekt ist gefördert von
 
- <img src="/images/tha.png" alt="Aga" style="width: 50%; height: auto; display: block;">
+<a href="https://www.tha.de/tha-funkenwerk/Aga-Bebynek-Bielanska.html" target="_blank">
+  <img src="/images/tha.png" alt="Aga" style="width: 50%; height: auto; display: block;">
+</a>
+
+
+
 
 <br>
 
@@ -34,7 +39,7 @@ Das Projekt ist gefördert von
 Ich suche Partnerschaften mit - Eigentümern denkmalgeschützter Gebäude - Architekten, Planern - Handwerkern, Restauratoren - Firmen, Herstellern die ihre Denkmal-Projekte /-Produkte präsentieren möchten. 
 
 
-<p>You can write me an <a href="mailto:info@erlebeerbe.com">email</a>.</p>
+<p>Schreib mir eine <a href="mailto:info@erlebeerbe.com">E-Mail</a>.</p>
 
 <br>
 <br>
