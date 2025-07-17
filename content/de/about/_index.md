@@ -1,5 +1,6 @@
 +++
 layout = 'about'
+url = '/about/'
 +++
 
 <div class="narrow">
