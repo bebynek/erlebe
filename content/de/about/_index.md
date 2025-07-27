@@ -1,6 +1,6 @@
 +++
 layout = 'about'
-url = '/about/'
+url = '/de/about/'
 +++
 
 <div class="narrow">
