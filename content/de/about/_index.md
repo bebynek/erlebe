@@ -5,6 +5,14 @@ url = '/de/about/'
 
 <div class="narrow">
 
+<figure style="margin: 0; width: fit-content;">
+  <img src="/images/abb.jpg" alt="Aga Bebynek" style="width: 100%; height: auto; display: block;">
+  <figcaption style="font-size: 12px; text-align: right; margin-top: 0.3em; width: 100%;">
+   <!-- Add photo-description  -->
+   @ André Albers
+  </figcaption>
+</figure>
+
 <p style="font-size: 30px; font-weight: bold;">Hi, ich bin Aga</p>
 
 
@@ -40,9 +48,11 @@ Das Projekt ist gefördert von
 Ich suche Partnerschaften mit - Eigentümern denkmalgeschützter Gebäude - Architekten, Planern - Handwerkern, Restauratoren - Firmen, Herstellern die ihre Denkmal-Projekte /-Produkte präsentieren möchten. 
 
 
-<p>Schreib mir eine <a href="mailto:info@erlebeerbe.com">E-Mail</a>.</p>
+<p class="newsletter-link">Magst du dein Projekt zeigen? Ich freue mich auf deine <a href="mailto:info@erlebeerbe.com">E-Mail</a>.</p>
 
 <br>
 <br>
+
+
 
 </div>

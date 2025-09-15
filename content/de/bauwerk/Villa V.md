@@ -5,7 +5,7 @@ title = 'Villa V'
 image = '/images/villav1.png'
 +++
 
-<span style="color:red">Achtung : fiktives Projekt, eventuelle Ähnlichkeiten mit realen Personen / Firmen sind zufällig und nicht beabsichtigt.</span>
+<span style="color:gray">Achtung : fiktives Projekt, eventuelle Ähnlichkeiten mit realen Personen / Firmen sind zufällig und nicht beabsichtigt.</span>
 
 
 **Mit großem Engagement sanierte eine Rentnerin aus Bayern eine Villa aus dem späten 20. Jahrhundert und bewahrte sie so vor dem Verfall. Darüber hinaus wurde das Gebäude energetisch modernisiert und bietet nach Abschluss der Maßnahmen ein komfortables und behagliches Zuhause.**

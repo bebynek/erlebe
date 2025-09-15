@@ -740,3 +740,27 @@ nav ul li.lang-dropdown ul.lang-submenu li a:hover {
   background-color: #eee;
   color: var(--primary-text);
 }
+
+
+/* Added by Aga - Newsletter */
+
+ .newsletter-link {
+    display: inline-block;
+    background-color: beige;
+    color: black;
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+
+  .newsletter-link a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none; /* removes underline */
+  }
+
+
+   .newsletter-link a:hover {
+    color: gray;
+    font-weight: bold;
+  }

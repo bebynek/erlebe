@@ -5,7 +5,7 @@ title = 'Historisierende Holzfenster'
 image = '/images/fensterff1.jpg'
 +++
 
-<span style="color:red">Achtung : fiktives Produkt, eventuelle Ähnlichkeiten mit realen Produkten / Firmen sind zufällig und nicht beabsichtigt.</span>
+<span style="color:gray">Achtung : fiktives Produkt, eventuelle Ähnlichkeiten mit realen Produkten / Firmen sind zufällig und nicht beabsichtigt.</span>
 
 **Historisierende Holzfenster für Sanierung von Altbauten mit hohen Ansprüchen an Qualität, Ästhetik und Energieeffizienz.**
 

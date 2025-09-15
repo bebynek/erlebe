@@ -4,6 +4,7 @@ draft = true
 title = 'erlebeErbe'
 
 +++
-<span style="color:red">Pilot Version</span>
 
-Eine Platform für Denkmalpflege und Bauen im Bestand. Entdecke einzigartige Restaurierungsprojekte weltweit. Erfahre mehr über neue Produkte, Technologien und Innovationen am Markt. Und vor allem: erlebe das baukulturelle Erbe.
+Eine Plattform für Denkmalpflege und Bauen im Bestand. Entdecke einzigartige Restaurierungsprojekte weltweit. Erfahre mehr über neue Produkte, Technologien und Innovationen am Markt. Und vor allem: erlebe das baukulturelle Erbe.
+
+<p class="newsletter-link">Möchtest du auf dem Laufenden bleiben? Abonniere unseren <a href="https://stats.sender.net/forms/aADOgl/view">Newsletter</a></p>
