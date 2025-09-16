@@ -751,6 +751,7 @@ nav ul li.lang-dropdown ul.lang-submenu li a:hover {
     padding: 4px 8px;
     border-radius: 4px;
     text-decoration: none;
+    width: fit-content; 
   }
 
   .newsletter-link a {
@@ -764,3 +765,7 @@ nav ul li.lang-dropdown ul.lang-submenu li a:hover {
     color: gray;
     font-weight: bold;
   }
+
+  .newsletter-wrapper {
+    text-align: center;
+}

@@ -2,14 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/de/bauprodukt/</loc>
+    <loc>http://localhost:1313/de/produkt/fenster-ff/</loc>
     <lastmod>2025-03-24T15:57:49+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/de/bauprodukt/fenster-ff/</loc>
+    <loc>http://localhost:1313/de/produkt/</loc>
     <lastmod>2025-03-24T15:57:49+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/de/bauwerk/</loc>
-    <lastmod>2025-03-24T14:58:24+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/de/</loc>
     <lastmod>2025-03-24T14:58:24+01:00</lastmod>
@@ -34,7 +31,10 @@
                 href="http://localhost:1313/de/"
                 />
   </url><url>
-    <loc>http://localhost:1313/de/bauwerk/villa-v/</loc>
+    <loc>http://localhost:1313/de/projekt/</loc>
+    <lastmod>2025-03-24T14:58:24+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/de/projekt/villa-v/</loc>
     <lastmod>2025-03-24T14:58:24+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/de/about/</loc>
