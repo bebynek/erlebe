@@ -46,12 +46,12 @@ Ich suche Partnerschaften mit - Eigentümern denkmalgeschützter Gebäude - Arch
     <br>
 
 Das Projekt ist gefördert von:
-<div style="display: flex; gap: 15px;">
+<div style="display: flex; gap: 15px; align-items: center;">
 <a href="https://www.tha.de/tha-funkenwerk/Aga-Bebynek-Bielanska.html" target="_blank">
   <img src="/images/fwpink.png" alt="Funkenwerk" style="max-height: 75px; display: block;">
 </a>
-<img src="/images/thapink.png" alt="THA" style="max-height: 85px; display: block;">
-<img src="/images/eit.png" alt="EIT" style="max-height: 85px; display: block;">
+<a> <img src="/images/thapink.png" alt="THA" style="max-height: 85px; display: block;"> </a>
+<a> <img src="/images/eit.png" alt="EIT" style="max-height: 85px; display: block;"> </a>
 </div>
 
 </span>
