@@ -32,7 +32,7 @@ Gebäude sind Zeugen unserer Vergangenheit und erzählen unsere Geschichte. Mir 
 **erlebeErbe** ist ein Projekt in der Gründungsphase, 
 das Architekten und Planer sowie Eigentümer denkmalgeschützter Gebäude bei der Planung nachhaltiger Baumaßnahmen und der Umsetzung innovativer Lösungen und neuer Technologien unterstützt. 
 
-Das Projekt ist gefördert von
+Das Projekt ist gefördert von:
 
 <a href="https://www.tha.de/tha-funkenwerk/Aga-Bebynek-Bielanska.html" target="_blank">
   <img src="/images/tha.png" alt="Aga" style="width: 50%; height: auto; display: block;">
