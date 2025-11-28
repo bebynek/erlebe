@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News on Erlebe Erbe</title>
+    <link>http://localhost:1313/de/news/</link>
+    <description>Recent content in News on Erlebe Erbe</description>
+    <generator>Hugo</generator>
+    <language>de-de</language>
+    <lastBuildDate>Thu, 25 Sep 2025 15:57:49 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/de/news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Erlebe Erbe unter den ausgewählten Startups des EIT CC Spark Incubation Program 2025</title>
+      <link>http://localhost:1313/de/news/eit-cc/</link>
+      <pubDate>Thu, 25 Sep 2025 15:57:49 +0100</pubDate>
+      <guid>http://localhost:1313/de/news/eit-cc/</guid>
+      <description>&lt;p&gt;Wir sind stolz und freuen uns sehr, dass erlebeErbe für das &lt;a href=&#34;https://eit-culture-creativity.eu/eit-culture-creativity-selects-16-startups-in-architecture-and-cultural-heritage-for-its-spark-incubation-programme-2025/&#34;&gt;EIT Culture &amp;amp; Cretivity Spark Incubation Program 2025&lt;/a&gt; ausgewählt wurde, das von UnternehmerTUM und SIBB - Digital Association of Berlin-Brandenburg unterstützt wird.&lt;/p&gt;&#xA;&lt;p&gt;Der Kickoff in Berlin war ein großartiger Start. Dort hatte ich die Gelegenheit, erlebeErbe vor einem größeren Publikum zu präsentieren und die großartigen Menschen hinter den anderen ausgewählten Startups kennenzulernen.&lt;/p&gt;&#xA;&lt;p&gt;Wertvolle Kontakte, spannende Einblicke und ein wichtiger Schritt für die weitere Entwicklung von erlebeErbe.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

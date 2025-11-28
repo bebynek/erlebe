@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Produkt on Erlebe Erbe</title>
+    <link>http://localhost:1313/de/produkt/</link>
+    <description>Recent content in Produkt on Erlebe Erbe</description>
+    <generator>Hugo</generator>
+    <language>de-de</language>
+    <lastBuildDate>Mon, 24 Mar 2025 15:57:49 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/de/produkt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Historisierende Holzfenster</title>
+      <link>http://localhost:1313/de/produkt/fenster-ff/</link>
+      <pubDate>Mon, 24 Mar 2025 15:57:49 +0100</pubDate>
+      <guid>http://localhost:1313/de/produkt/fenster-ff/</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;color:gray&#34;&gt;Achtung : fiktives Produkt, eventuelle Ähnlichkeiten mit realen Produkten / Firmen sind zufällig und nicht beabsichtigt.&lt;/span&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Historisierende Holzfenster für Sanierung von Altbauten mit hohen Ansprüchen an Qualität, Ästhetik und Energieeffizienz.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;figure style=&#34;margin: 0; width: fit-content;&#34;&gt;&#xA;  &lt;img src=&#34;http://localhost:1313/images/fensterff1.jpg&#34; alt=&#34;Villa V&#34; style=&#34;width: 100%; height: auto; display: block;&#34;&gt;&#xA;  &lt;figcaption style=&#34;font-size: 12px; text-align: right; margin-top: 0.3em;&#34;&gt;&#xA;    KI-generiertes Bild (Leonardo AI)&#xA;  &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;br&gt;&#xA;&lt;br&gt;&#xA;&lt;p&gt;&lt;u&gt;Preisanfrage&lt;/u&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;u&gt;Technisches Datenblatt&lt;/u&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;u&gt;Ausschreibungstext&lt;/u&gt;&lt;/p&gt;&#xA;&lt;br&gt;&#xA;&lt;br&gt;&#xA;&lt;p&gt;&lt;strong&gt;Referenzprojekte&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/de/projekt/villa-v/&#34;&gt;Villa V&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
