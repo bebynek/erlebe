@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/de/projekt/moorbad/</loc>
+    <lastmod>2025-12-02T15:18:24+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/de/projekt/</loc>
+    <lastmod>2025-12-02T15:18:24+01:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/de/news/eit-cc/</loc>
     <lastmod>2025-09-25T15:57:49+01:00</lastmod>
   </url><url>
@@ -36,9 +42,6 @@
                 hreflang="de-de"
                 href="http://localhost:1313/de/"
                 />
-  </url><url>
-    <loc>http://localhost:1313/de/projekt/</loc>
-    <lastmod>2025-03-24T14:58:24+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/de/projekt/villa-v/</loc>
     <lastmod>2025-03-24T14:58:24+01:00</lastmod>

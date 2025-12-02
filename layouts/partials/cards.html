@@ -8,13 +8,14 @@
     <div class="card h-entry">
       <a href="{{ $page.Permalink }}" class="u-url">
         {{ with $page.Params.image }}
-          <img src="{{ . }}" alt="{{ $page.Title }}" class="u-photo">
+          <img src="{{ . }}" alt= "{{ $page.Title }}" class="u-photo">
         {{ else }}
           {{ partial "randImage" $page }}
         {{ end }}
         <div class="text">
           <h2 class="p-name">{{ $page.Title }}</h2>
-          <p class="small e-content">{{ $page.Summary | truncate 100 }}</p>
+<p class="small e-content">{{ $page.Summary | plainify | truncate 100 }}</p>
+
         </div>
       </a>
     </div>
