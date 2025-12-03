@@ -6,7 +6,7 @@ url = '/de/about/'
 <div class="narrow">
 
 <figure style="margin: 0; width: fit-content;">
-  <img src="/images/abb.jpg" alt="Aga Bebynek" style="width: 100%; height: auto; display: block;">
+  <img src="/images/abb.jpg" alt="Aga Bebynek" style="width: 100%; height: auto; display: block; border-radius: 8px;">
   <figcaption style="font-size: 12px; text-align: right; margin-top: 0.3em; width: 100%;">
    <!-- Add photo-description  -->
    Foto: André Albers
