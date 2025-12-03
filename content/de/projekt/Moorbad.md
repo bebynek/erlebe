@@ -7,7 +7,7 @@ image = '/images/01 Projekte/Moorbad/moor1.png'
 
 <figure style="margin: 0; width: fit-content;">
   <img src="/images/01 Projekte/Moorbad/moor1.png" alt="Moorbad Oberstdorf Freibad" style="width: 100%; height: auto; display: block;">
-  <figcaption style="font-size: 12px; text-align: right; margin-top: 0.3em;">
+  <figcaption style="font-size: 12px; text-align: right; margin-top: 0.3em; width: 100%;">
     Foto: Markt Oberstdorf
   </figcaption>
 </figure>
@@ -43,9 +43,34 @@ baurechtliche Genehmigung erstellte das zuständige Landratsamt
 Oberallgäu und in Abstimmung mit dem Bayerischen Landesamt für
 Denkmalpflege in München.
 
+<br>
+
 **Fakten**
 
-Bauherr
+Bauherr:  
+
+Baujahr: 1929
+
+Fertigstellung Sanierung: 2022
+
+<br>
 
 **Projektbeteiligten**
+
+<u> Planer </u>
+
+Objekt- und Tragwerksplaner: [IDL | Ingenieurbüro Dipl.-Ing. Dieter Linka](http://www.idl-plan.de)
+
+<u> Ausführende Firmen </u>
+
+<br>
+
+**Verwendete Produkten**
+
+<br>
+
+**Fotogalerie**
+
+{{< gallery >}}
+
 

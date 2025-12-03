@@ -1,0 +1,37 @@
+{{ $path := "images/01 Projekte/Moorbad" }}
+{{ $files := readDir (printf "static/%s" $path) }}
+
+<div class="gallery">
+  {{ range $files }}
+    {{ $name := .Name | lower }}
+
+    {{ if and (not .IsDir)
+             (or (strings.HasSuffix $name ".jpg")
+                 (strings.HasSuffix $name ".jpeg")
+                 (strings.HasSuffix $name ".png")
+                 (strings.HasSuffix $name ".webp")) }}
+
+      <a href="/{{ $path }}/{{ .Name }}" target="_blank">
+        <img src="/{{ $path }}/{{ .Name }}" loading="lazy" />
+      </a>
+
+    {{ end }}
+  {{ end }}
+</div>
+
+<style>
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* <-- exactly 3 per row */
+  gap: 12px;
+}
+
+/* Uniform image size */
+.gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+</style>

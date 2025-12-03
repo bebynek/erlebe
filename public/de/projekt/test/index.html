@@ -6,7 +6,7 @@
     <link href="/images/logo.png" rel="icon" sizes="32x32" type="image/png"/>
     <link href="/images/logo.png" rel="icon" sizes="16x16" type="image/png"/>
     <link href="/images/fav/site.webmanifest" rel="manifest"/>
-    <title>News | Erlebe Erbe</title>
+    <title>Test | Erlebe Erbe</title>
     
     <link href="/css/styles.css" rel="stylesheet"/>
     <link href="/css/custom.css" rel="stylesheet"/>
@@ -69,44 +69,188 @@
   </nav>
 </header>
 
-    <section class="hero">
-        <h1 class="p-name">News</h1>
-                <form action='' class="form-inline" id="search" method="get">
-    <label for="search-input" hidden="">Search site</label>
-    <input id="search-input" name="query" placeholder="Type here to search" type="text"/>
-    <button type="submit" value="search">Search</button>
-</form>
+    
 
+    <section class="hero"
+    id="heroSection" onload="adjustTextColor(this)">
+        <div>
+            <h1 class="p-name" id="textOverlay">Test</h1>
+        </div>
     </section>
-    <main class="h-entry e-content container col">
-        
-        
-        
+    <main class="post h-entry container row">
+        <div class="post">
+            <div class="post-data row">
+                <time class="dt-published" datetime="0001-01-01 00:00:00 &#43;0000 UTC">
+                    <a class="u-url" href="http://localhost:1313/de/projekt/test/">01.01.1</a>
+                </time>
+                <span rel="author" class="p-author h-card">
+                    <img class="u-photo hidden" src="" />
+                    <span class="p-name hidden" rel="me"></span>
+                </span>
+            </div>
+            <div class="e-content">
+                
 
 
-
-<div class="cards" id="results">
+<div class="gallery">
   
     
-    <div class="card h-entry">
-      <a href="http://localhost:1313/de/news/eit-cc/" class="u-url">
-        
-          <img src="/images/blog_eit/eit1.jpg" alt= "Erlebe Erbe unter den ausgewählten Startups des EIT CC Spark Incubation Program 2025" class="u-photo">
-        
-        <div class="text">
-          <h2 class="p-name">Erlebe Erbe unter den ausgewählten Startups des EIT CC Spark Incubation Program 2025</h2>
-<p class="small e-content">Wir sind stolz und freuen uns sehr, dass erlebeErbe für das EIT Culture &amp; Cretivity Spark …</p>
-
-        </div>
+      <a href="/images/01%20Projekte/Moorbad/.DS_Store" target="_blank">
+        <img src="/images/01%20Projekte/Moorbad/.DS_Store" loading="lazy" />
       </a>
-    </div>
+    
+  
+    
+      <a href="/images/01%20Projekte/Moorbad/moor1.png" target="_blank">
+        <img src="/images/01%20Projekte/Moorbad/moor1.png" loading="lazy" />
+      </a>
+    
+  
+    
+      <a href="/images/01%20Projekte/Moorbad/moor2.png" target="_blank">
+        <img src="/images/01%20Projekte/Moorbad/moor2.png" loading="lazy" />
+      </a>
+    
+  
+    
+      <a href="/images/01%20Projekte/Moorbad/moor3.png" target="_blank">
+        <img src="/images/01%20Projekte/Moorbad/moor3.png" loading="lazy" />
+      </a>
+    
+  
+    
+      <a href="/images/01%20Projekte/Moorbad/moor4.png" target="_blank">
+        <img src="/images/01%20Projekte/Moorbad/moor4.png" loading="lazy" />
+      </a>
+    
+  
+    
+      <a href="/images/01%20Projekte/Moorbad/moor5.png" target="_blank">
+        <img src="/images/01%20Projekte/Moorbad/moor5.png" loading="lazy" />
+      </a>
+    
+  
+    
+      <a href="/images/01%20Projekte/Moorbad/moor6.png" target="_blank">
+        <img src="/images/01%20Projekte/Moorbad/moor6.png" loading="lazy" />
+      </a>
+    
+  
+    
+      <a href="/images/01%20Projekte/Moorbad/moor7.png" target="_blank">
+        <img src="/images/01%20Projekte/Moorbad/moor7.png" loading="lazy" />
+      </a>
+    
+  
+    
+      <a href="/images/01%20Projekte/Moorbad/moor8.png" target="_blank">
+        <img src="/images/01%20Projekte/Moorbad/moor8.png" loading="lazy" />
+      </a>
+    
   
 </div>
 
+<style>
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+}
+</style>
 
 
+
+                
+            </div>
+        </div>
         
     </main>
+    <script>
+        function adjustTextColor(sectionId) {
+            const section = document.getElementById(sectionId);
+            const style = window.getComputedStyle(section);
+            const imageUrl = style
+                .backgroundImage
+                .slice(4, -1)
+                .replace(/["']/g, "");
+            const image = new Image();
+            image.src = imageUrl;
+            image.onload = function () {
+                const canvas = document.createElement('canvas');
+                const context = canvas.getContext('2d');
+                canvas.width = image.width;
+                canvas.height = image.height;
+                context.drawImage(image, 0, 0, image.width, image.height);
+                const imageData = context.getImageData(0, 0, canvas.width, canvas.height);
+                const data = imageData.data;
+                let r = 0,
+                    g = 0,
+                    b = 0;
+                for (let i = 0; i < data.length; i += 4) {
+                    r += data[i];
+                    g += data[i + 1];
+                    b += data[i + 2];
+                }
+                r /= (data.length / 4);
+                g /= (data.length / 4);
+                b /= (data.length / 4);
+                const brightness = Math.sqrt(0.299 * r * r + 0.587 * g * g + 0.114 * b * b);
+                const textColor = brightness > 128
+                    ? 'black'
+                    : 'white';
+                const shadowColor = brightness > 128
+                    ? 'rgba(255, 255, 255, 0.7)'
+                    : 'rgba(0, 0, 0, 0.7)';
+                const textOverlay = document.getElementById('textOverlay');
+                textOverlay.style.color = textColor;
+                textOverlay.style.textShadow = `0 0 5px ${shadowColor}, 0 0 10px ${shadowColor}, 0 0 20px ${shadowColor}, 0 0 40px ${shadowColor}, 0 0 80px ${shadowColor}, 0 0 90px ${shadowColor}, 0 0 100px ${shadowColor}, 0 0 150px ${shadowColor}`;
+            };
+        }
+        
+        adjustTextColor('heroSection');
+    </script>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    const id = entry
+                        .target
+                        .getAttribute('id');
+
+                    if (entry.intersectionRatio > 0) {
+                        clearActiveStatesInTableOfContents();
+                        document
+                            .querySelector(`nav li a[href="#${id}"]`)
+                            .parentElement
+                            .classList
+                            .add('active');
+                    }
+                });
+            });
+            document
+                .querySelectorAll('h1[id],h2[id],h3[id],h4[id]')
+                .forEach((section) => {
+                    observerForTableOfContentActiveState.observe(section);
+                });
+
+        });
+
+        function clearActiveStatesInTableOfContents() {
+            document
+                .querySelectorAll('nav li')
+                .forEach((section) => {
+                    section
+                        .classList
+                        .remove('active');
+                });
+        }
+    </script>
 <footer>
 
  <div class="footer-container">
@@ -135,7 +279,7 @@
         
         "title": "Moorbad Oberstdorf Freibad",
             "tags": [],
-    "content": " Foto: Markt Oberstdorf Projektbeschreibung\nDas Moorbad in Oberstdorf ist in den Jahren 1929/30 als „Moorwasserbadeanstalt“ nach den Plänen der Architekten Wilhelm und Willy Huber errichtet worden und diente fortan als Ersatzbau für das „alte Moorbad“ aus dem Jahre 1883, welches sich allerdings an anderer Stelle im Stockach am „Rauhen“ angelegt war. Im Juni 1930 wurde das, nur zu Fuß zu erreichendes Moorbad feierlich eröffnet und zeichnet sich neben der einzigartigen und gesundheitsfördernden Wasserqualität auch architektonisch, durch eine unveränderte Dreiflügelanlage aus, die als hochwertige Holzkonstruktion errichtet ist. Das Gebäude beherbergt unverändert einen zentralen Zugang mit Kassenraum, eine Gastronomie sowie insgesamt 137 Wechselkabinen, die sich im Erd- und Obergeschoss des symmetrisch aufgebauten Walmdachgebäudes und der beiden Seitentrakte mit Satteldachausbildung befinden. Der östliche Seitentrakt weist bereits seit Jahrzehnten starke Gebäudesetzungen von mehreren Zentimetern auf, die kontinuierlich mit baulichen Ausgleichsmaßnahmen ausgeglichen werden sollten, allerdings stellten sich tragende Stampfbetonsäulen und eine Treppenanlage schief und der Holzbau quittierte dieses mit sichtbaren Deformationen. Auf Grundlage einer kompletten Bestandsaufnahme des historischen Gebäudes und eines Sachstandsberichts des Tragwerks im östlichen Seitenstraktes sowie einer bodenmechanischer / geologischen Untersuchung wurde ein komplexes Sanierungskonzept erarbeitet, welches durch den Marktgemeinderat zur Ausführung freigeben wurde, dass zudem den Einbau einer notwendigen, öffentliche WC-Anlage beinhaltete. Die baurechtliche Genehmigung erstellte das zuständige Landratsamt Oberallgäu und in Abstimmung mit dem Bayerischen Landesamt für Denkmalpflege in München.\nFakten\nBauherr:\nBaujahr: 1929\nFertigstellung Sanierung: 2022\nProjektbeteiligten\nPlaner Objekt- und Tragwerksplaner: IDL | Ingenieurbüro Dipl.-Ing. Dieter Linka\nAusführende Firmen Verwendete Produkten\nFotogalerie\n", 
+    "content": " Foto: Markt Oberstdorf Projektbeschreibung\nDas Moorbad in Oberstdorf ist in den Jahren 1929/30 als „Moorwasserbadeanstalt“ nach den Plänen der Architekten Wilhelm und Willy Huber errichtet worden und diente fortan als Ersatzbau für das „alte Moorbad“ aus dem Jahre 1883, welches sich allerdings an anderer Stelle im Stockach am „Rauhen“ angelegt war. Im Juni 1930 wurde das, nur zu Fuß zu erreichendes Moorbad feierlich eröffnet und zeichnet sich neben der einzigartigen und gesundheitsfördernden Wasserqualität auch architektonisch, durch eine unveränderte Dreiflügelanlage aus, die als hochwertige Holzkonstruktion errichtet ist. Das Gebäude beherbergt unverändert einen zentralen Zugang mit Kassenraum, eine Gastronomie sowie insgesamt 137 Wechselkabinen, die sich im Erd- und Obergeschoss des symmetrisch aufgebauten Walmdachgebäudes und der beiden Seitentrakte mit Satteldachausbildung befinden. Der östliche Seitentrakt weist bereits seit Jahrzehnten starke Gebäudesetzungen von mehreren Zentimetern auf, die kontinuierlich mit baulichen Ausgleichsmaßnahmen ausgeglichen werden sollten, allerdings stellten sich tragende Stampfbetonsäulen und eine Treppenanlage schief und der Holzbau quittierte dieses mit sichtbaren Deformationen. Auf Grundlage einer kompletten Bestandsaufnahme des historischen Gebäudes und eines Sachstandsberichts des Tragwerks im östlichen Seitenstraktes sowie einer bodenmechanischer / geologischen Untersuchung wurde ein komplexes Sanierungskonzept erarbeitet, welches durch den Marktgemeinderat zur Ausführung freigeben wurde, dass zudem den Einbau einer notwendigen, öffentliche WC-Anlage beinhaltete. Die baurechtliche Genehmigung erstellte das zuständige Landratsamt Oberallgäu und in Abstimmung mit dem Bayerischen Landesamt für Denkmalpflege in München.\nFakten\nBauherr\nProjektbeteiligten ", 
     "url": "http:\/\/localhost:1313\/de\/projekt\/moorbad\/"
         },
     
@@ -254,6 +398,15 @@
             "tags": [],
     "content": "", 
     "url": "http:\/\/localhost:1313\/de\/tags\/"
+        },
+    
+    
+    "http:\/\/localhost:1313\/de\/projekt\/test\/": {
+        
+        "title": "Test",
+            "tags": [],
+    "content": " ", 
+    "url": "http:\/\/localhost:1313\/de\/projekt\/test\/"
         },
     
     }
