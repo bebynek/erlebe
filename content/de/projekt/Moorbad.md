@@ -7,7 +7,8 @@ image = '/images/01 Projekte/Moorbad/moor1.png'
 
 <figure style="margin: 0; width: fit-content;">
   <img src="/images/01 Projekte/Moorbad/moor1.png" alt="Moorbad Oberstdorf Freibad" style="width: 100%; height: auto; display: block;">
-  <figcaption style="font-size: 12px; text-align: right; margin-top: 0.3em; width: 100%;">
+  <figcaption style="font-size: 12px; text-align: right; margin-top: 0.3em; width: 100%; border-radius: 8px;
+">
     Foto: Markt Oberstdorf
   </figcaption>
 </figure>

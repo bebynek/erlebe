@@ -22,15 +22,15 @@
 <style>
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* <-- exactly 3 per row */
+  grid-template-columns: repeat(3, 1fr); /* exactly 3 per row */
   gap: 12px;
 }
 
-/* Uniform image size */
+/* Make images perfectly square */
 .gallery img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  aspect-ratio: 1 / 1;   /* <-- the magic: perfect square */
+  object-fit: cover;     /* crop while keeping center */
   border-radius: 8px;
   display: block;
 }
