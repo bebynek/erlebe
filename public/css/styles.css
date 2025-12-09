@@ -787,30 +787,38 @@ nav ul li.lang-dropdown ul.lang-submenu li a:hover {
 /* Common row styles */
 .partners-row {
   display: flex;
-  gap: 20px;          /* space between logos */
   align-items: center;
-  margin-bottom: 20px; /* space between rows */
-  flex-wrap: wrap;      /* keep responsive if screen is small */
+  flex-wrap: wrap; /* allows wrapping on small screens */
 }
 
 /* First row: centered */
 .partners-row-center {
   justify-content: flex-start;
+  gap: 20px;       /* spacing between logos in first row */
+}
+
+/* First row logos: uniform height */
+.partners-row-center img {
+  height: 80px;    /* uniform height */
+  width: auto;
+  object-fit: contain;
+  display: block;
 }
 
 /* Second row: left-aligned */
 .partners-row-left {
   justify-content: flex-start;
+  gap: 60px;       /* different spacing between logos */
+  margin-top: 20px; /* space between rows */
 }
 
-/* Logos */
-.partners-row img {
-  height: 85px;      /* uniform height */
-  width: auto;       /* preserve aspect ratio */
-  display: block;
+/* Second row logos: different height */
+.partners-row-left img {
+  height: 100px;   /* different height from first row */
+  width: auto;
   object-fit: contain;
+  display: block;
 }
-
 
 
 

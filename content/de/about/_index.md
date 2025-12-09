@@ -43,5 +43,5 @@ Ich suche Partnerschaften mit - Eigentümern denkmalgeschützter Gebäude - Arch
 <br>
 <br>
 
-{{< partners >}}
+
 
