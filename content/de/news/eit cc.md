@@ -14,7 +14,7 @@ Wertvolle Kontakte, spannende Einblicke und ein wichtiger Schritt für die weite
 Wir blicken gespannt auf die kommenden Monate, voller Lernen, Zusammenarbeit und Wachstum!
 
 <figure style="margin: 0; width: fit-content;">
-  <img src="/images/blog_eit/eit2.jpg" alt="Kickoff Berlin" style="width: 100%; height: auto; display: block;">
+  <img src="/images/blog_eit/eit2.jpg" alt="Kickoff Berlin" style="width: 100%; height: auto; display: block;border-radius: 8px;">
   <figcaption style="font-size: 12px; text-align: right; margin-top: 0.3em; width: 100%;">
    <!-- Add photo-description  -->
    Fotos: Francisco Jauregui

@@ -1,6 +1,9 @@
 {{ $path := "images/01 Projekte/Moorbad" }}
 {{ $files := readDir (printf "static/%s" $path) }}
 
+{{ $captionsFile := "content/de/projekt/Moorbad_captions.yaml" }}
+{{ $captions := readFile $captionsFile | transform.Unmarshal }}
+
 <div class="gallery">
   {{ range $files }}
     {{ $name := .Name | lower }}
@@ -11,13 +14,16 @@
                  (strings.HasSuffix $name ".png")
                  (strings.HasSuffix $name ".webp")) }}
 
-      <a href="/{{ $path }}/{{ .Name }}" target="_blank">
-        <img src="/{{ $path }}/{{ .Name }}" loading="lazy" />
+      <a href="/{{ $path }}/{{ .Name }}" class="gallery-item">
+        <img src="/{{ $path }}/{{ .Name }}" 
+             alt="{{ index $captions $name }}" 
+             loading="lazy">
       </a>
 
     {{ end }}
   {{ end }}
 </div>
+
 
 <style>
 .gallery {
