@@ -27,6 +27,16 @@
     <loc>http://localhost:1313/pl/</loc>
     <xhtml:link
                 rel="alternate"
+                hreflang="de-de"
+                href="http://localhost:1313/de/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/en/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="es"
                 href="http://localhost:1313/es/"
                 />

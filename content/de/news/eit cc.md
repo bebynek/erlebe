@@ -1,7 +1,7 @@
 +++
 date = '2025-09-25T15:57:49+01:00'
 draft = true
-title = 'Erlebe Erbe unter den ausgewählten Startups des EIT CC Spark Incubation Program 2025'
+title = 'Erlebe Erbe unter den ausgewählten Startups des EIT CC Spark Incubation5 Program 202'
 image = '/images/blog_eit/eit1.jpg'
 +++
 
