@@ -1,15 +1,28 @@
 <header>
   <div class="logo h-card">
-    <a class="u-url" href="{{ .Site.Home.Permalink }}">
-      <img alt="Site Logo" class="site-logo u-photo" src="{{ $.Site.Params.logo | default "/images/logo.png" }}"/>
+    <a class="u-url" href="{{ "/" | relLangURL }}">
+      <img alt="Site Logo" class="site-logo u-photo" src="{{ $.Site.Params.logo | default "/images/logo-ee.png" }}"/>
     </a>
   </div>
   <nav class="menu">
     <ul>
       {{- range .Site.Menus.main }}
-        <li>
-          <a href="{{ .URL |relLangURL}}">{{ .Name }}</a>
-        </li>
+        {{- if .HasChildren }}
+          <li class="dropdown">
+            <a href="{{ .URL |relLangURL}}">{{ .Name }}</a>
+            <ul class="submenu">
+              {{- range .Children }}
+                <li>
+                  <a href="{{ .URL |relLangURL}}">{{ .Name }}</a>
+                </li>
+              {{- end }}
+            </ul>
+          </li>
+        {{- else }}
+          <li>
+            <a href="{{ .URL |relLangURL}}">{{ .Name }}</a>
+          </li>
+        {{- end }}
       {{- end }}
 
       <!-- 🌐 Language Dropdown -->
@@ -20,7 +33,7 @@
   {{ else if eq .Site.Language.Lang "pl" }}PL
   {{ else if eq .Site.Language.Lang "es" }}ES
   {{ else }}{{ .Site.Language.Lang | upper }}
-  {{ end }} ▼
+  {{ end }}
         </a>
         <ul class="lang-submenu">
           {{- range .Site.Languages }}

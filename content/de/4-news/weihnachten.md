@@ -1,6 +1,6 @@
 +++
 date = '2025-12-22T12:57:49+01:00'
-draft = true
+draft = false
 title = 'Frohe Weihnachten und alles Gute für das neue Jahr!'
 image = '/images/news/weihnachten/DSC02838.jpg'
 +++

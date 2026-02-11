@@ -1,0 +1,22 @@
+{{/* Get section and limit parameters, with defaults */}}
+{{ $section := .Get "section" | default "1-projekte" }}
+{{ $limit := .Get "limit" | default 2 }}
+
+<div class="cards">
+  {{ range first $limit (where .Site.RegularPages "Section" $section) }}
+    {{ $page := . }}
+    <div class="card h-entry">
+      <a href="{{ $page.Permalink }}" class="u-url">
+        {{ with $page.Params.image }}
+          <img src="{{ . }}" alt= "{{ $page.Title }}" class="u-photo">
+        {{ else }}
+          {{ partial "randImage" $page }}
+        {{ end }}
+        <div class="text">
+          <h2 class="p-name">{{ $page.Title }}</h2>
+          <p class="small e-content">{{ $page.Summary | plainify | truncate 100 }}</p>
+        </div>
+      </a>
+    </div>
+  {{ end }}
+</div>

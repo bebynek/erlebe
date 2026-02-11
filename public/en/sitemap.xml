@@ -26,16 +26,6 @@
                 />
   </url><url>
     <loc>http://localhost:1313/en/about/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de-de"
-                href="http://localhost:1313/de/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/en/about/"
-                />
   </url><url>
     <loc>http://localhost:1313/en/categories/</loc>
     <xhtml:link

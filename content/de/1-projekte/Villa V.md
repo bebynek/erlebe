@@ -1,6 +1,6 @@
 +++
 date = '2025-03-24T14:58:24+01:00'
-draft = true
+draft = false
 title = 'Villa V'
 image = '/images/villav1.png'
 +++
@@ -21,7 +21,7 @@ Frau F zeigt die liebevoll sanierte Villa mit großer Freude und möchte damit a
 
 
 <figure style="margin: 0; width: fit-content;">
-  <img src="/images/villav2.jpg" alt="Villa V" style="width: 100%; height: auto; display: block;">
+  <img src="/images/villav2.jpg" alt="Villa V" style="width: 100%; height: auto; display: block;border-radius: 8px;">
   <figcaption style="font-size: 12px; text-align: right; margin-top: 0.3em;">
     KI-generiertes Bild (Leonardo AI)
   </figcaption>
@@ -57,7 +57,7 @@ Primärenergiebedarf: XXX
 **Verwendete Produkte**
 
 
-[Historisierende Holzfenster]({{< ref "Fenster-FF.md" >}})
+[Historisierende Holzfenster]({{< ref "Fenster FF.md" >}})
 
 
 

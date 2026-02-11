@@ -18,45 +18,70 @@ pluralizeListTitles = false
 
 [languages]
 
-  [languages.de]
-    languageName = "Deutsch"
-    languageCode = "de-de"
-    weight = 1
-    contentDir = "content/de"
+[languages.de]
+  languageName = "Deutsch"
+  languageCode = "de-de"
+  weight = 1
+  contentDir = "content/de"
 
-    [languages.de.menu]
-      [[languages.de.menu.main]]
-        name = "Home"
-        url = "/"
-        weight = 1
-      [[languages.de.menu.main]]
-        name = "Projekte"
-        url = "/projekt/"
-        weight = 2
-      [[languages.de.menu.main]]
-        name = "Produkte"
-        url = "/produkt/"
-        weight = 3
-      
-     
-        [[languages.de.menu.main]]
-        name = "News"
-        url = "/news/"
-        weight = 5
-            [[languages.de.menu.main]]
-        name = "About"
-        url = "/about/"
-        weight = 6
+  [languages.de.menu]
 
+    [[languages.de.menu.main]]
+      name = "Plattform"
+      url = "/plattform/"
+      weight = 2
+      colored = true
 
-      [[languages.de.menu.footer]]
-        name = "Impressum"
-        url = "/impressum/"
-        weight = 1
-      [[languages.de.menu.footer]]
-        name = "Datenschutz"
-        url = "/datenschutz/"
-        weight = 2
+    [[languages.de.menu.main]]
+      name = "Projekte"
+      url = "/1-projekte/"
+      parent = "Plattform"
+      weight = 1
+
+    [[languages.de.menu.main]]
+      name = "Wissen"
+      url = "/2-wissen/"
+      parent = "Plattform"
+      weight = 2
+   
+
+    [[languages.de.menu.main]]
+      name = "Lösungen"
+      url = "/3-losungen/"
+      parent = "Plattform"
+      weight = 3
+
+    [[languages.de.menu.main]]
+      name = "Mitmachen"
+      url = "/6-mitmachen/"
+      parent = "Plattform"
+      weight = 4
+
+    [[languages.de.menu.main]]
+      name = "News"
+      url = "/4-news/"
+      weight = 6
+
+    [[languages.de.menu.main]]
+      name = "About"
+      url = "/5-about/"
+      weight = 5
+
+    [[languages.de.menu.main]]
+      name = "Kontakt"
+      url = "/7-kontakt/"
+      weight = 8
+
+    [[languages.de.menu.footer]]
+      name = "Impressum"
+      url = "/impressum/"
+      weight = 1
+
+    [[languages.de.menu.footer]]
+      name = "Datenschutz"
+      url = "/datenschutz/"
+      weight = 2
+
 
   [languages.en]
     languageName = "English"

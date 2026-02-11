@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mitmachen on Erlebe Erbe</title>
+    <link>http://localhost:1313/de/6-mitmachen/</link>
+    <description>Recent content in Mitmachen on Erlebe Erbe</description>
+    <generator>Hugo</generator>
+    <language>de-de</language>
+    <atom:link href="http://localhost:1313/de/6-mitmachen/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Als Planer:in bewerben</title>
+      <link>http://localhost:1313/de/mitmachen/m-planer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/de/mitmachen/m-planer/</guid>
+      <description>&lt;div class=&#34;contact-content&#34;&gt;&#xA;&lt;p style=&#34;font-size: 30px; font-weight: bold;&#34;&gt;Erfassungsformular &lt;br&gt; für Fachplaner:in im Bereich Denkmalpflege&lt;/p&gt;&#xA;&lt;br&gt;&#xA;&lt;br&gt;&#xA;&lt;!-- Contact form: replace the action URL with your Formspree endpoint (https://formspree.io/f/YOUR_FORM_ID) or follow the Netlify instructions below --&gt;&#xA;&lt;form id=&#34;contact-form&#34; method=&#34;POST&#34; action=&#34;https://formspree.io/f/mqedzqpl&#34;&gt;&#xA;  &lt;!-- Redirect to thank-you page after submission --&gt;&#xA;  &lt;input type=&#34;hidden&#34; name=&#34;_next&#34; value=&#34;/de/6-mitmachen/danke/&#34;&gt;&#xA;&lt;b&gt;1. Fachplaner&lt;/b&gt;&#xA;&lt;p&gt;&lt;label for=&#34;firmenname&#34;&gt;Firmenname *&lt;/label&gt;&#xA;&lt;input id=&#34;firmenname&#34; name=&#34;firmenname&#34; type=&#34;text&#34; required&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;label for=&#34;strasse&#34;&gt;Strasse, Hausnummer *&lt;/label&gt;&#xA;&lt;input id=&#34;strasse&#34; name=&#34;strasse&#34; type=&#34;text&#34; required&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;label for=&#34;ort&#34;&gt;Postleitzahl, Ort *&lt;/label&gt;&#xA;&lt;input id=&#34;ort&#34; name=&#34;ort&#34; type=&#34;text&#34; required&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;label for=&#34;website&#34;&gt;Website *&lt;/label&gt;&#xA;&lt;input id=&#34;website&#34; name=&#34;website&#34; type=&#34;text&#34; required&gt;&lt;/p&gt;&#xA;  &lt;br&gt;&#xA;&lt;b&gt;2. Fachliche Qualifikation &amp; Spezialisierung&lt;/b&gt;&#xA;&lt;p&gt;&lt;label for=&#34;fachliche-qualifikation&#34;&gt;Fachliche Qualifikation *&lt;/label&gt;&#xA;&lt;input id=&#34;fachliche-qualifikation&#34; name=&#34;fachliche-qualifikation&#34; type=&#34;text&#34; required&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;label for=&#34;berufsbezeichnung&#34;&gt;Berufsbezeichnung *&lt;/label&gt;&#xA;&lt;input id=&#34;berufsbezeichnung&#34; name=&#34;berufsbezeichnung&#34; type=&#34;text&#34; required&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;label for=&#34;kammer&#34;&gt;Zuständige Kammer/Verband *&lt;/label&gt;&#xA;&lt;input id=&#34;kammer&#34; name=&#34;kammer&#34; type=&#34;text&#34; required&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;label for=&#34;spezialisierung&#34;&gt;Spezialisierung *&lt;/label&gt;&#xA;&lt;input id=&#34;spezialisierung&#34; name=&#34;spezialisierung&#34; type=&#34;text&#34; required&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Handwerksbetrieb eintragen</title>
+      <link>http://localhost:1313/de/mitmachen/m-handwerk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/de/mitmachen/m-handwerk/</guid>
+      <description>&lt;div class=&#34;contact-content&#34;&gt;&#xA;&lt;p style=&#34;font-size: 30px; font-weight: bold;&#34;&gt;Erfassungsformular&lt;br&gt;für Handwerksbetrieb im Bereich Denkmalpflege&lt;/p&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Diese Seite befindet sich derzeit in Bearbeitung.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Projekt einreichen</title>
+      <link>http://localhost:1313/de/mitmachen/m-projekt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/de/mitmachen/m-projekt/</guid>
+      <description>&lt;div class=&#34;contact-content&#34;&gt;&#xA;&lt;p style=&#34;font-size: 30px; font-weight: bold;&#34;&gt;Erfassungsformular für Best-Practice-Projekt &lt;br&gt;im Bereich Denkmalpflege&lt;/p&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Diese Seite befindet sich derzeit in Bearbeitung.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;!--Kontaktieren Sie mich für Projekte, Kooperationen oder Beratung.&#xA;&#xA;Ich freue mich auf Ihre Anfrage.&#xA;&#xA;&lt;br&gt;&#xA;&#xA;&lt;!-- Contact form: replace the action URL with your Formspree endpoint (https://formspree.io/f/YOUR_FORM_ID) or follow the Netlify instructions below &#xA;&lt;form id=&#34;contact-form&#34; method=&#34;POST&#34; action=&#34;https://formspree.io/f/mqedzqpl&#34;&gt;&#xA;  &lt;label for=&#34;name&#34;&gt;Name&lt;/label&gt;&#xA;  &lt;input id=&#34;name&#34; name=&#34;name&#34; type=&#34;text&#34; required&gt;&#xA;&#xA;  &lt;label for=&#34;email&#34;&gt;E‑Mail&lt;/label&gt;&#xA;  &lt;input id=&#34;email&#34; name=&#34;email&#34; type=&#34;email&#34; required&gt;&#xA;&#xA;  &lt;label for=&#34;message&#34;&gt;Nachricht&lt;/label&gt;&#xA;  &lt;textarea id=&#34;message&#34; name=&#34;message&#34; rows=&#34;24&#34; required&gt;&lt;/textarea&gt;&#xA;&#xA;  &lt;label class=&#34;consent&#34;&gt;&lt;input type=&#34;checkbox&#34; name=&#34;consent&#34; required&gt; Ich habe die &lt;a href=&#34;http://localhost:1313/datenschutz/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt; Datenschutzerklärung &lt;/a&gt; gelesen und stimme zu, dass meine Angaben zur Bearbeitung meiner Anfrage verarbeitet werden.&#xA;&lt;/label&gt;&#xA;&#xA;  &lt;button type=&#34;submit&#34;&gt;Senden&lt;/button&gt;&#xA;&lt;/form&gt;&#xA;&#xA;&lt;/div&gt;&#xA;--&gt;</description>
+    </item>
+    <item>
+      <title>Vielen Dank</title>
+      <link>http://localhost:1313/de/6-mitmachen/danke/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/de/6-mitmachen/danke/</guid>
+      <description>&lt;p style=&#34;font-size: 30px; font-weight: bold;&#34;&gt;Vielen Dank&lt;/p&gt;&#xA;&lt;p&gt;Wir haben Ihre Anmeldung erhalten und melden uns bald bei Ihnen.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
