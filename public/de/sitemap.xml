@@ -11,10 +11,10 @@
     <loc>http://localhost:1313/de/4-news/eit-cc/</loc>
     <lastmod>2025-09-25T15:57:49+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/de/produkt/fenster-ff/</loc>
+    <loc>http://localhost:1313/de/3-losungen/produkte/fenster-ff/</loc>
     <lastmod>2025-03-24T15:57:49+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/de/produkt/</loc>
+    <loc>http://localhost:1313/de/3-losungen/</loc>
     <lastmod>2025-03-24T15:57:49+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/de/</loc>
@@ -76,13 +76,13 @@
                 href="http://localhost:1313/de/categories/"
                 />
   </url><url>
+    <loc>http://localhost:1313/de/3-losungen/fachleute/</loc>
+  </url><url>
     <loc>http://localhost:1313/de/mitmachen/m-handwerk/</loc>
   </url><url>
     <loc>http://localhost:1313/de/7-kontakt/</loc>
   </url><url>
     <loc>http://localhost:1313/de/legal/</loc>
-  </url><url>
-    <loc>http://localhost:1313/de/3-losungen/</loc>
   </url><url>
     <loc>http://localhost:1313/de/6-mitmachen/</loc>
   </url><url>

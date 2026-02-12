@@ -11,8 +11,8 @@ title = 'Plattform'
 Beispiele aus der Denkmalpraxis.
 Sanierungen, Restaurierungen und Umnutzungen zeigen, was möglich ist. Mit Einblicken in Planung, Umsetzung und beteiligte Akteur:innen.
 
-{{< latest-cards section="1-projekte" limit="2" >}}
 <a href="/de/1-projekte/">Mehr erfahren</a>
+{{< latest-cards section="1-projekte" limit="2" >}}
 </div>
 
 <p style="font-size: 30px; font-weight: bold;">Wissen</p>
@@ -26,6 +26,8 @@ Fachleute, Handwerk und Produkte für denkmalgeschützte Gebäude.
 Sorgfältig ausgewählt und verknüpft mit realen Referenzprojekten.
 
 <a href="/de/3-losungen/">Mehr erfahren</a>
+{{< latest-cards section="3-losungen" limit="2" >}}
+
 
 <p style="font-size: 30px; font-weight: bold;">Mitmachen</p>
 
