@@ -6,7 +6,7 @@
     <link href="/images/logo.png" rel="icon" sizes="32x32" type="image/png"/>
     <link href="/images/logo.png" rel="icon" sizes="16x16" type="image/png"/>
     <link href="/images/fav/site.webmanifest" rel="manifest"/>
-    <title>Historisierende Holzfenster | Erlebe Erbe</title>
+    <title>Gesichter der Denkmalpflege | Erlebe Erbe</title>
     
     <link href="/css/styles.css" rel="stylesheet"/>
     <link href="/css/custom.css" rel="stylesheet"/>
@@ -80,130 +80,14 @@
   </nav>
 </header>
 
-    
+  
+    <main class="h-entry e-content container col">
+        <div class="contact-content">
+<p style="font-size: 30px; font-weight: bold; ">Interview-Reihe <br>Gesichter der Denkmalpflege</p></p>
+<p><strong>Diese Seite befindet sich derzeit in Bearbeitung.</strong></p>
 
-    <section class="hero"
-    id="heroSection" onload="adjustTextColor(this)">
-        <div>
-            <h1 class="p-name" id="textOverlay">Historisierende Holzfenster</h1>
-        </div>
-    </section>
-    <main class="post h-entry container row">
-        <div class="post">
-            <div class="post-data row">
-                <time class="dt-published" datetime="2025-03-24 15:57:49 &#43;0100 CET">
-                    <a class="u-url" href="http://localhost:1313/de/produkt/fenster-ff/">24.03.2025</a>
-                </time>
-                <span rel="author" class="p-author h-card">
-                    <img class="u-photo hidden" src="" />
-                    <span class="p-name hidden" rel="me"></span>
-                </span>
-            </div>
-            <div class="e-content">
-                <p><span style="color:gray">Achtung : fiktives Produkt, eventuelle Ähnlichkeiten mit realen Produkten / Firmen sind zufällig und nicht beabsichtigt.</span></p>
-<p><strong>Historisierende Holzfenster für Sanierung von Altbauten mit hohen Ansprüchen an Qualität, Ästhetik und Energieeffizienz.</strong></p>
-<figure style="margin: 0; width: fit-content;">
-  <img src="/images/fensterff1.jpg" alt="Villa V" style="width: 100%; height: auto; display: block;">
-  <figcaption style="font-size: 12px; text-align: right; margin-top: 0.3em;">
-    KI-generiertes Bild (Leonardo AI)
-  </figcaption>
-</figure>
-<br>
-<br>
-<p><u>Preisanfrage</u></p>
-<p><u>Technisches Datenblatt</u></p>
-<p><u>Ausschreibungstext</u></p>
-<br>
-<br>
-<p><strong>Referenzprojekte</strong></p>
-<p><a href="http://localhost:1313/de/1-projekte/villa-v/">Villa V</a></p>
-
-
-                
-            </div>
-        </div>
         
     </main>
-    <script>
-        function adjustTextColor(sectionId) {
-            const section = document.getElementById(sectionId);
-            const style = window.getComputedStyle(section);
-            const imageUrl = style
-                .backgroundImage
-                .slice(4, -1)
-                .replace(/["']/g, "");
-            const image = new Image();
-            image.src = imageUrl;
-            image.onload = function () {
-                const canvas = document.createElement('canvas');
-                const context = canvas.getContext('2d');
-                canvas.width = image.width;
-                canvas.height = image.height;
-                context.drawImage(image, 0, 0, image.width, image.height);
-                const imageData = context.getImageData(0, 0, canvas.width, canvas.height);
-                const data = imageData.data;
-                let r = 0,
-                    g = 0,
-                    b = 0;
-                for (let i = 0; i < data.length; i += 4) {
-                    r += data[i];
-                    g += data[i + 1];
-                    b += data[i + 2];
-                }
-                r /= (data.length / 4);
-                g /= (data.length / 4);
-                b /= (data.length / 4);
-                const brightness = Math.sqrt(0.299 * r * r + 0.587 * g * g + 0.114 * b * b);
-                const textColor = brightness > 128
-                    ? 'black'
-                    : 'white';
-                const shadowColor = brightness > 128
-                    ? 'rgba(255, 255, 255, 0.7)'
-                    : 'rgba(0, 0, 0, 0.7)';
-                const textOverlay = document.getElementById('textOverlay');
-                textOverlay.style.color = textColor;
-                textOverlay.style.textShadow = `0 0 5px ${shadowColor}, 0 0 10px ${shadowColor}, 0 0 20px ${shadowColor}, 0 0 40px ${shadowColor}, 0 0 80px ${shadowColor}, 0 0 90px ${shadowColor}, 0 0 100px ${shadowColor}, 0 0 150px ${shadowColor}`;
-            };
-        }
-        
-        adjustTextColor('heroSection');
-    </script>
-    <script>
-        window.addEventListener('DOMContentLoaded', () => {
-            const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    const id = entry
-                        .target
-                        .getAttribute('id');
-
-                    if (entry.intersectionRatio > 0) {
-                        clearActiveStatesInTableOfContents();
-                        document
-                            .querySelector(`nav li a[href="#${id}"]`)
-                            .parentElement
-                            .classList
-                            .add('active');
-                    }
-                });
-            });
-            document
-                .querySelectorAll('h1[id],h2[id],h3[id],h4[id]')
-                .forEach((section) => {
-                    observerForTableOfContentActiveState.observe(section);
-                });
-
-        });
-
-        function clearActiveStatesInTableOfContents() {
-            document
-                .querySelectorAll('nav li')
-                .forEach((section) => {
-                    section
-                        .classList
-                        .remove('active');
-                });
-        }
-    </script>
 <footer>
 
  <div class="footer-container">
@@ -255,21 +139,30 @@
         },
     
     
-    "http:\/\/localhost:1313\/de\/produkt\/fenster-ff\/": {
+    "http:\/\/localhost:1313\/de\/3-losungen\/produkte\/fenster-ff\/": {
         
         "title": "Historisierende Holzfenster",
             "tags": [],
     "content": "Achtung : fiktives Produkt, eventuelle Ähnlichkeiten mit realen Produkten / Firmen sind zufällig und nicht beabsichtigt.\nHistorisierende Holzfenster für Sanierung von Altbauten mit hohen Ansprüchen an Qualität, Ästhetik und Energieeffizienz.\nKI-generiertes Bild (Leonardo AI) Preisanfrage\nTechnisches Datenblatt\nAusschreibungstext\nReferenzprojekte\nVilla V\n", 
-    "url": "http:\/\/localhost:1313\/de\/produkt\/fenster-ff\/"
+    "url": "http:\/\/localhost:1313\/de\/3-losungen\/produkte\/fenster-ff\/"
         },
     
     
-    "http:\/\/localhost:1313\/de\/produkt\/": {
+    "http:\/\/localhost:1313\/de\/3-losungen\/": {
         
-        "title": "Produkt",
+        "title": "Lösungen",
             "tags": [],
-    "content": "", 
-    "url": "http:\/\/localhost:1313\/de\/produkt\/"
+    "content": " Lösungen\nSearch site Suchen Fachleute\nErfahrene Planer:innen mit Expertise in der Denkmalpflege.\nPassende Planer:innen finden\nHandwerk\nQualifiziertes Handwerk mit Erfahrung im historischen Bestand.\nErfahrenes Handwerk finden\nProdukte\nLösungen, die im Bestand funktionieren.\nGeeignete Produkte finden Historisierende Holzfenster Achtung : fiktives Produkt, eventuelle Ähnlichkeiten mit realen Produkten / Firmen sind zufällig und …\n", 
+    "url": "http:\/\/localhost:1313\/de\/3-losungen\/"
+        },
+    
+    
+    "http:\/\/localhost:1313\/de\/3-losungen\/produkte\/": {
+        
+        "title": "Produkte",
+            "tags": [],
+    "content": " Produkte\nDiese Seite befindet sich derzeit in Bearbeitung.\n", 
+    "url": "http:\/\/localhost:1313\/de\/3-losungen\/produkte\/"
         },
     
     
@@ -277,7 +170,7 @@
         
         "title": "Erlebe Erbe",
             "tags": [],
-    "content": "", 
+    "content": "Eine Plattform für Denkmalpflege und Bauen im Bestand. Entdecke einzigartige Restaurierungsprojekte. Erfahre mehr über neue Produkte, Technologien und Innovationen am Markt. Und vor allem: erlebe das baukulturelle Erbe.\nProjekt einreichen\nTeile dein Denkmalprojekt, Produkt oder deine Expertise und werde Teil der kuratierten Plattform Erlebe Erbe.\nJetzt einreichen\n", 
     "url": "http:\/\/localhost:1313\/de\/"
         },
     
@@ -286,7 +179,7 @@
         
         "title": "Projekte",
             "tags": [],
-    "content": " Projekte\n", 
+    "content": " Projekte\nDiese Seite befindet sich derzeit in Bearbeitung.\n", 
     "url": "http:\/\/localhost:1313\/de\/1-projekte\/"
         },
     
@@ -331,7 +224,7 @@
         
         "title": "Als Planer:in bewerben",
             "tags": [],
-    "content": " Erfassungsformular für Fachplaner:in im Bereich Denkmalpflege\n1. Fachplaner Firmenname * Strasse, Hausnummer * Postleitzahl, Ort * Website * 2. Fachliche Qualifikation \u0026 Spezialisierung Fachliche Qualifikation * Berufsbezeichnung * Zuständige Kammer/Verband * Spezialisierung * Zertifikate / Zusatzqualifikationen 3. Firmenprofil Firmenprofil / Leistungsumfang *\n4. Förderprogramme Ich habe Erfahrung mit Förderprogramme. Ich biete Unterstützung bei der Beantragung von Fördermitteln an. 5. Referenzprojekte Denkmalpflege Bitte geben Sie Informationen zu mindestens einem Projekt an.\nProjekt 1\nProjektname * Projektadresse * Leistungen / Besonderheiten *\nggf. Auszeichnungen oder Anerkennungen Projekt 2 (optional)\nProjektname Projektadresse Leistungen / Besonderheiten\nggf. Auszeichnungen oder Anerkennungen Projekt 3 (optional)\nProjektname Projektadresse Leistungen / Besonderheiten\nggf. Auszeichnungen oder Anerkennungen 6. Kontaktmöglichkeiten\nKontaktperson\nName * Telefon * E-Mail * 7. Anlagen\nFirmenlogo (max. 3 MB) *\nFirmenlogo (JPG/PNG) Bild- und Plananlage für Best-Practice-Projekte *\nLaden Sie größere Dateien z. B. bei WeTransfer, Google Drive oder Dropbox hoch und fügen Sie den Download-Link hier ein. Alternativ können Sie uns die Dateien auch per E-Mail an info@erlebeerbe.com zusenden.\nIch willige in die Aufnahme meiner Angaben in die Datenbank der Plattform Erlebe Erbe ein. Ich erkläre mich damit einverstanden, dass meine Daten, einschließlich der eingereichten Bilder und Unterlagen, im Rahmen der Aufgaben der Plattform veröffentlicht und verarbeitet werden. Ich versichere, dass ich über die erforderlichen Nutzungsrechte an allen eingereichten Bildern und Unterlagen verfüge, und bestätige, die Datenschutzerklärung gelesen und verstanden zu haben. Senden\n* Pflichtfelder\n", 
+    "content": " Erfassungsformular für Fachplaner:in im Bereich Denkmalpflege\n1. Fachplaner Firmenname * Strasse, Hausnummer * Postleitzahl, Ort * Website * 2. Fachliche Qualifikation \u0026 Spezialisierung Fachliche Qualifikation * Berufsbezeichnung * Zuständige Kammer/Verband * Spezialisierung * Zertifikate / Zusatzqualifikationen 3. Firmenprofil Firmenprofil / Leistungsumfang *\n4. Referenzprojekte Denkmalpflege\nBitte geben Sie Informationen zu mindestens einem Projekt an.\nProjekt 1\nProjektname * Projektadresse * Leistungen / Besonderheiten *\nggf. Auszeichnungen oder Anerkennungen Projekt 2 (optional)\nProjektname Projektadresse Leistungen / Besonderheiten\nggf. Auszeichnungen oder Anerkennungen Projekt 3 (optional)\nProjektname Projektadresse Leistungen / Besonderheiten\nggf. Auszeichnungen oder Anerkennungen 5. Kontaktmöglichkeiten\nKontaktperson\nName * Telefon * E-Mail * 6. Anlagen\nFirmenlogo (max. 3 MB) *\nFirmenlogo (JPG/PNG) Bild- und Plananlage für Best-Practice-Projekte *\nLaden Sie größere Dateien z. B. bei WeTransfer, Google Drive oder Dropbox hoch und fügen Sie den Download-Link hier ein. Alternativ können Sie uns die Dateien auch per E-Mail an info@erlebeerbe.com zusenden.\n7. Einwilligung zur Veröffentlichung\nIch willige in die Aufnahme meiner Angaben in die Datenbank der Plattform Erlebe Erbe ein. Ich erkläre mich damit einverstanden, dass meine Daten, einschließlich der eingereichten Bilder und Unterlagen, im Rahmen der Aufgaben der Plattform veröffentlicht und verarbeitet werden. Ich versichere, dass ich über die erforderlichen Nutzungsrechte an allen eingereichten Bildern und Unterlagen verfüge, und bestätige, die Datenschutzerklärung gelesen und verstanden zu haben. * Bitte stellen Sie sicher, dass die Bauherrschaft mit der Veröffentlichung der eingereichten Projektunterlagen einverstanden ist. Gerne können Sie hierfür unsere Vorlage verwenden. PDF herunterladen. Ich bestätige, dass das Einverständnis der Eigentümerschaft zur Veröffentlichung vorliegt. * Senden\n* Pflichtfelder\n", 
     "url": "http:\/\/localhost:1313\/de\/mitmachen\/m-planer\/"
         },
     
@@ -342,6 +235,33 @@
             "tags": [],
     "content": "", 
     "url": "http:\/\/localhost:1313\/de\/categories\/"
+        },
+    
+    
+    "http:\/\/localhost:1313\/de\/3-losungen\/fachleute\/": {
+        
+        "title": "Fachleute",
+            "tags": [],
+    "content": " Fachleute\nDiese Seite befindet sich derzeit in Bearbeitung.\n", 
+    "url": "http:\/\/localhost:1313\/de\/3-losungen\/fachleute\/"
+        },
+    
+    
+    "http:\/\/localhost:1313\/de\/mitmachen\/m-interview\/": {
+        
+        "title": "Gesichter der Denkmalpflege",
+            "tags": [],
+    "content": " Interview-Reihe Gesichter der Denkmalpflege\nDiese Seite befindet sich derzeit in Bearbeitung.\n", 
+    "url": "http:\/\/localhost:1313\/de\/mitmachen\/m-interview\/"
+        },
+    
+    
+    "http:\/\/localhost:1313\/de\/3-losungen\/handwerk\/": {
+        
+        "title": "Handwerk",
+            "tags": [],
+    "content": " Handwerk\nDiese Seite befindet sich derzeit in Bearbeitung.\n", 
+    "url": "http:\/\/localhost:1313\/de\/3-losungen\/handwerk\/"
         },
     
     
@@ -372,20 +292,11 @@
         },
     
     
-    "http:\/\/localhost:1313\/de\/3-losungen\/": {
-        
-        "title": "Lösungen",
-            "tags": [],
-    "content": " Lösungen\nDiese Seite befindet sich derzeit in Bearbeitung.\n", 
-    "url": "http:\/\/localhost:1313\/de\/3-losungen\/"
-        },
-    
-    
     "http:\/\/localhost:1313\/de\/6-mitmachen\/": {
         
         "title": "Mitmachen",
             "tags": [],
-    "content": " Erlebe Erbe lebt vom Austausch. Reichen Sie Projekte ein, präsentieren Sie Ihre Expertise oder stellen Sie Produkte für die Denkmalpflege vor.\nProjekt einreichen\nHaben Sie ein denkmalgeschütztes Gebäude saniert oder begleitet? Reichen Sie Ihr Projekt ein und zeigen Sie, welche Lösungen im Bestand wirklich funktionieren.\nJetzt Projekt einreichen\nAls Planer:in bewerben\nSie planen oder beraten im Bereich Denkmalpflege? Stellen Sie Ihre Expertise und Referenzprojekte vor und werden Sie Teil der kuratierten Erlebe Erbe Datenbank.\nJetzt als Planer:in bewerben\nHandwerksbetrieb eintragen\nSie sind im spezialisierten Handwerk der Denkmalpflege tätig? Präsentieren Sie Ihr Gewerk, Ihre Erfahrung und ausgewählte Referenzen.\nJetzt Handwerksbetrieb eintragen\n", 
+    "content": " Erlebe Erbe lebt vom Austausch. Reichen Sie Projekte ein, präsentieren Sie Ihre Expertise oder stellen Sie Produkte für die Denkmalpflege vor.\nProjekt einreichen\nHaben Sie ein denkmalgeschütztes Gebäude saniert oder begleitet? Reichen Sie Ihr Projekt ein und zeigen Sie, welche Lösungen im Bestand wirklich funktionieren.\nJetzt Projekt einreichen\nAls Planer:in bewerben\nSie planen oder beraten im Bereich Denkmalpflege? Stellen Sie Ihre Expertise und Referenzprojekte vor und werden Sie Teil der kuratierten Erlebe Erbe Datenbank.\nJetzt als Planer:in bewerben\nHandwerksbetrieb eintragen\nSie sind im spezialisierten Handwerk der Denkmalpflege tätig? Präsentieren Sie Ihr Gewerk, Ihre Erfahrung und ausgewählte Referenzen.\nJetzt Handwerksbetrieb eintragen\nInterview-Reihe Gesichter der Denkmalpflege\nGesichter der Denkmalpflege ist eine Interviewreihe, die die Menschen in den Mittelpunkt stellt, die hinter den Denkmälern und der Denkmalpflege stehen: Bauherren, Planer, Handwerker, Restauratoren, Hersteller von Bauprodukten. In kurzen Porträts geben sie Einblicke in ihre Motivation, ihre Arbeit und ihre größten Herausforderungen.\nJetzt am Interview teilnehmen\n", 
     "url": "http:\/\/localhost:1313\/de\/6-mitmachen\/"
         },
     
@@ -394,7 +305,7 @@
         
         "title": "Plattform",
             "tags": [],
-    "content": " Projekte\nBeispiele aus der Denkmalpraxis. Sanierungen, Restaurierungen und Umnutzungen zeigen, was möglich ist. Mit Einblicken in Planung, Umsetzung und beteiligte Akteur:innen. Villa V Achtung : fiktives Projekt, eventuelle Ähnlichkeiten mit realen Personen / Firmen sind zufällig und …\nMehr erfahren\nWissen\nGrundlagen, Hintergründe und Orientierung rund um Denkmalpflege. Von rechtlichen Rahmenbedingungen bis zu praktischen Empfehlungen aus der Praxis. Mehr erfahren\nLösungen\nFachleute, Handwerk und Produkte für denkmalgeschützte Gebäude. Sorgfältig ausgewählt und verknüpft mit realen Referenzprojekten. Mehr erfahren\nMitmachen\nJetzt Projekt einreichen Erlebe Erbe lebt vom Austausch. Reichen Sie Projekte ein, präsentieren Sie Ihre Expertise oder stellen Sie Produkte für die Denkmalpflege vor.\n", 
+    "content": " Projekte\nBeispiele aus der Denkmalpraxis. Sanierungen, Restaurierungen und Umnutzungen zeigen, was möglich ist. Mit Einblicken in Planung, Umsetzung und beteiligte Akteur:innen. Mehr erfahren Villa V Achtung : fiktives Projekt, eventuelle Ähnlichkeiten mit realen Personen / Firmen sind zufällig und …\nWissen\nGrundlagen, Hintergründe und Orientierung rund um Denkmalpflege. Von rechtlichen Rahmenbedingungen bis zu praktischen Empfehlungen aus der Praxis. Mehr erfahren\nLösungen\nFachleute, Handwerk und Produkte für denkmalgeschützte Gebäude. Sorgfältig ausgewählt und verknüpft mit realen Referenzprojekten. Mehr erfahren Historisierende Holzfenster Achtung : fiktives Produkt, eventuelle Ähnlichkeiten mit realen Produkten / Firmen sind zufällig und …\nMitmachen\nJetzt Projekt einreichen Erlebe Erbe lebt vom Austausch. Reichen Sie Projekte ein, präsentieren Sie Ihre Expertise oder stellen Sie Produkte für die Denkmalpflege vor.\n", 
     "url": "http:\/\/localhost:1313\/de\/plattform\/"
         },
     

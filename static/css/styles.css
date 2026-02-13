@@ -62,6 +62,16 @@ a:focus {
     color: var(--primary-text);
 }
 
+a.outro-link,
+a.outro-link:visited {
+    color: #000 !important;
+}
+
+a.outro-link:hover,
+a.outro-link:focus {
+    color: #777 !important;
+}
+
 details {
     padding: 0.5rem 0;
 }

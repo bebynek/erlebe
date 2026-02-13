@@ -6,3 +6,6 @@ title = 'Produkte'
 
 <div class="contact-content">
 <p style="font-size: 30px; font-weight: bold;">Produkte</p>
+
+
+**Diese Seite befindet sich derzeit in Bearbeitung.** 

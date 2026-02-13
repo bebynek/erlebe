@@ -35,5 +35,6 @@ Qualifiziertes Handwerk mit Erfahrung im historischen Bestand.
 Lösungen, die im Bestand funktionieren.
 
 <a href="/de/3-losungen/produkte/">Geeignete Produkte finden</a>
+{{< latest-cards section="3-losungen/produkte" limit="2" >}}
 
 </div>

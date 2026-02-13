@@ -17,6 +17,9 @@
     <loc>http://localhost:1313/de/3-losungen/</loc>
     <lastmod>2025-03-24T15:57:49+01:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/de/3-losungen/produkte/</loc>
+    <lastmod>2025-03-24T15:57:49+01:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/de/</loc>
     <lastmod>2025-03-24T14:58:24+01:00</lastmod>
     <xhtml:link
@@ -77,6 +80,10 @@
                 />
   </url><url>
     <loc>http://localhost:1313/de/3-losungen/fachleute/</loc>
+  </url><url>
+    <loc>http://localhost:1313/de/mitmachen/m-interview/</loc>
+  </url><url>
+    <loc>http://localhost:1313/de/3-losungen/handwerk/</loc>
   </url><url>
     <loc>http://localhost:1313/de/mitmachen/m-handwerk/</loc>
   </url><url>

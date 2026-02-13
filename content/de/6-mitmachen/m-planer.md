@@ -31,17 +31,14 @@ title = 'Als Planer:in bewerben'
   <br>
 <b>2. Fachliche Qualifikation & Spezialisierung</b>
 
-  <label for="fachliche-qualifikation">Fachliche Qualifikation *</label>
+  <label for="fachliche-qualifikation">Fachliche Qualifikation / Berufsbezeichnung *</label>
   <input id="fachliche-qualifikation" name="fachliche-qualifikation" type="text" required>
-
-  <label for="berufsbezeichnung">Berufsbezeichnung *</label>
-  <input id="berufsbezeichnung" name="berufsbezeichnung" type="text" required>
 
   <label for="kammer">Zuständige Kammer/Verband *</label>
   <input id="kammer" name="kammer" type="text" required>
 
-  <label for="spezialisierung">Spezialisierung *</label>
-  <input id="spezialisierung" name="spezialisierung" type="text" required> 
+  <label for="spezialisierung">Spezialisierung</label>
+  <input id="spezialisierung" name="spezialisierung" type="text"> 
 
   <label for="zertifikate">Zertifikate / Zusatzqualifikationen</label>
   <input id="zertifikate" name="zertifikate" type="text">   
@@ -53,16 +50,9 @@ title = 'Als Planer:in bewerben'
   <textarea id="leistungsumfang" name="leistungsumfang" rows="24" required></textarea>
 
   <br>
-<b>4. Förderprogramme</b>
 
-<label class="erfahrung-forderprogramme"><input type="checkbox" name="erfahrung-forderprogramme"> Ich habe Erfahrung mit Förderprogramme.
-</label>
 
-<label class="unterstutzung-forderprogramme"><input type="checkbox" name="unterstutzung-forderprogramme"> Ich biete Unterstützung bei der Beantragung von Fördermitteln an.
-</label>
-
-  <br>
-<b>5. Referenzprojekte Denkmalpflege</b>
+<b>4. Referenzprojekte Denkmalpflege</b>
 
 Bitte geben Sie Informationen zu mindestens <u>einem</u> Projekt an.
 
@@ -109,7 +99,7 @@ Bitte geben Sie Informationen zu mindestens <u>einem</u> Projekt an.
 <input id="p3-auszeichnungen" name="p3-auszeichnungen" type="text">
 
 
-<b>6. Kontaktmöglichkeiten</b>
+<b>5. Kontaktmöglichkeiten</b>
 
 Kontaktperson
 
@@ -124,7 +114,7 @@ Kontaktperson
 
 <br>
 
-<b>7. Anlagen</b>
+<b>6. Anlagen</b>
 
 Firmenlogo (max. 3 MB) *
 
@@ -141,7 +131,7 @@ Bild- und Plananlage für Best-Practice-Projekte *
  Laden Sie größere Dateien z. B. bei WeTransfer, Google Drive oder Dropbox hoch und fügen Sie den Download-Link hier ein. 
 
 </label>
-<input type="url" name="fileLink" id="fileLink"
+<input type="text" name="fileLink" id="fileLink"
        placeholder="https://…">
        <br>
 
@@ -149,10 +139,21 @@ Alternativ können Sie uns die Dateien auch per E-Mail an [info@erlebeerbe.com](
 
 <br>
 
+<b>7. Einwilligung zur Veröffentlichung</b>
+
 <label class="consent"><input type="checkbox" name="consent" required> Ich willige in die Aufnahme meiner Angaben in die Datenbank der Plattform Erlebe Erbe ein. Ich erkläre mich damit einverstanden, dass meine Daten, einschließlich der eingereichten Bilder und Unterlagen, im Rahmen der Aufgaben der Plattform veröffentlicht und verarbeitet werden. 
-Ich versichere, dass ich über die erforderlichen Nutzungsrechte an allen eingereichten Bildern und Unterlagen verfüge, und bestätige, die <a href="/datenschutz/" target="_blank" rel="noopener noreferrer"> Datenschutzerklärung </a> gelesen und verstanden zu haben.
+Ich versichere, dass ich über die erforderlichen Nutzungsrechte an allen eingereichten Bildern und Unterlagen verfüge, und bestätige, die <a href="/datenschutz/" target="_blank" rel="noopener noreferrer"> Datenschutzerklärung </a> gelesen und verstanden zu haben. *
 </label>
 
+
+Bitte stellen Sie sicher, dass die Bauherrschaft mit der Veröffentlichung der eingereichten Projektunterlagen einverstanden ist.
+Gerne können Sie hierfür unsere Vorlage verwenden.
+<a href="/files/erlebeErbe_Einverstaendniserklaerung_Eigentuemer.pdf" target="_blank" rel="noopener">
+  PDF herunterladen.
+</a>
+
+<label class="consent-owner"><input type="checkbox" name="consent-owner" required> Ich bestätige, dass das Einverständnis der Eigentümerschaft zur Veröffentlichung vorliegt. *
+</label>
 
   <button type="submit">Senden</button>
 </form>

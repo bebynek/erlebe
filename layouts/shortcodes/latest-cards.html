@@ -1,9 +1,17 @@
 {{/* Get section and limit parameters, with defaults */}}
 {{ $section := .Get "section" | default "1-projekte" }}
 {{ $limit := .Get "limit" | default 2 }}
+{{ $pages := .Site.RegularPages }}
+
+{{ if in $section "/" }}
+  {{ $dir := printf "%s/" $section }}
+  {{ $pages = where $pages "File.Dir" $dir }}
+{{ else }}
+  {{ $pages = where $pages "Section" $section }}
+{{ end }}
 
 <div class="cards">
-  {{ range first $limit (where .Site.RegularPages "Section" $section) }}
+  {{ range first $limit $pages }}
     {{ $page := . }}
     <div class="card h-entry">
       <a href="{{ $page.Permalink }}" class="u-url">

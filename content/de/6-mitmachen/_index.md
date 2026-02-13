@@ -65,3 +65,10 @@ Sie sind im spezialisierten Handwerk der Denkmalpflege tätig?
 Präsentieren Sie Ihr Gewerk, Ihre Erfahrung und ausgewählte Referenzen.
 
 [Jetzt Handwerksbetrieb eintragen](/de/mitmachen/m-handwerk/)
+
+
+<p style="font-size: 30px; font-weight: bold;">Interview-Reihe Gesichter der Denkmalpflege</p>
+
+Gesichter der Denkmalpflege ist eine Interviewreihe, die die Menschen in den Mittelpunkt stellt, die hinter den Denkmälern und der Denkmalpflege stehen: Bauherren, Planer, Handwerker, Restauratoren, Hersteller von Bauprodukten. In kurzen Porträts geben sie Einblicke in ihre Motivation, ihre Arbeit und ihre größten Herausforderungen.
+
+[Jetzt am Interview teilnehmen](/de/mitmachen/m-interview/)
