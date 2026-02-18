@@ -16,8 +16,33 @@
         --link-color: #9fb1b6;
     }
 
-    img {
+    img:not(.site-logo) {
         opacity: 90%;
+    }
+
+    .footer-menu li a {
+        color: #fff !important;
+    }
+
+    h2 a.outro-link,
+    h2 a.outro-link:visited,
+    a.outro-link,
+    a.outro-link:visited {
+        color: #fff !important;
+    }
+
+    h2 a.outro-link:hover,
+    h2 a.outro-link:focus,
+    a.outro-link:hover,
+    a.outro-link:focus {
+        color: #ccc !important;
+    }
+
+    .form-inline input[type="text"],
+    #search-input {
+        background-color: var(--link-color) !important;
+        color: #000;
+        border-color: var(--link-color);
     }
 }
 
@@ -39,6 +64,7 @@
 /* Base Elements Styles */
 html {
     background-color: var(--primary-bg);
+    width: 100%;
 }
 
 body {
@@ -47,6 +73,12 @@ body {
     min-height: 100vh;
     margin: 0 auto;
     line-height: 1.6;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
 a,
@@ -82,12 +114,14 @@ ul {
 
 img {
     max-width: 100%;
+    height: auto;
 }
 
 figure {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 100%;
 }
 
 figcaption {
@@ -275,8 +309,21 @@ header {
 }
 
 header .logo img {
-    height: 50px;
+    height: 35px;
+    width: auto;
     border-radius: 8px;
+    object-fit: contain;
+    margin-top: 4px;
+}
+
+header .logo {
+    display: inline-block;
+}
+
+.site-logo {
+    height: 35px;
+    width: auto;
+    object-fit: contain;
 }
 
 /* Hero Section Styles */
@@ -472,7 +519,7 @@ ul.search-results li a {
 
 .footer-menu li a {
   text-decoration: none;
-  color: #333;
+    color: #000;
   font-size: 0.8rem;
   display: inline-block;
   line-height: 1.5;
@@ -607,17 +654,112 @@ h2 > code {
 
 /* Responsive Styles */
 @media (max-width: 600px) {
+    body {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    header .logo {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    header .logo img,
+    .site-logo {
+        height: 35px;
+    }
+
+    nav.menu ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    nav.menu ul li {
+        margin: 0.3rem 0;
+    }
+
+    .container {
+        max-width: 100%;
+        margin: 1rem auto;
+        padding: 0;
+    }
+
+    .form-inline input[type="text"] {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        padding: 10px 0;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .card {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .card img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .hero {
+        min-height: auto;
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .hero h1,
+    .hero p {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .post {
+        padding: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        max-width: 100%;
+    }
+
     footer {
         flex-direction: column;
         text-align: center;
     }
 
-    .cards {
-        grid-template-columns: 1fr;
-    }
-
     aside.tableOfContentContainer {
         display: none;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    body {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -836,7 +978,6 @@ nav ul li.lang-dropdown ul.lang-submenu li a:hover {
 /* Partners section */
 .partners-section {
   text-align: left;
-  background-color: white;
   padding: 20px 0;
 }
 
@@ -850,6 +991,28 @@ nav ul li.lang-dropdown ul.lang-submenu li a:hover {
   display: flex;
   align-items: center;
   flex-wrap: wrap; /* allows wrapping on small screens */
+}
+
+.partners-row-single {
+    justify-content: flex-start;
+    gap: 5px;
+    flex-wrap: nowrap;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.partners-row-single a {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+}
+
+.partners-row-single img {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0;
 }
 
 /* First row: centered */

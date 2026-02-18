@@ -1,7 +1,10 @@
 <header>
   <div class="logo h-card">
     <a class="u-url" href="{{ "/" | relLangURL }}">
-      <img alt="Site Logo" class="site-logo u-photo" src="{{ $.Site.Params.logo | default "/images/logo-ee.png" }}"/>
+      <picture>
+        <source srcset="{{ $.Site.Params.logoDark | default "/images/logo-ee-dark.png" }}" media="(prefers-color-scheme: dark)">
+        <img alt="Site Logo" class="site-logo u-photo" src="{{ $.Site.Params.logo | default "/images/logo-ee.png" }}"/>
+      </picture>
     </a>
   </div>
   <nav class="menu">
