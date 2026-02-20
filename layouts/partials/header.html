@@ -12,12 +12,25 @@
       {{- range .Site.Menus.main }}
         {{- if .HasChildren }}
           <li class="dropdown">
-            <a href="{{ .URL |relLangURL}}">{{ .Name }}</a>
+            <a href="{{ .URL |relLangURL}}">{{ .Name }} &#9662;</a>
             <ul class="submenu">
               {{- range .Children }}
-                <li>
-                  <a href="{{ .URL |relLangURL}}">{{ .Name }}</a>
-                </li>
+                {{- if .HasChildren }}
+                  <li class="dropdown">
+                    <a href="{{ .URL |relLangURL}}">{{ .Name }} &#9662;</a>
+                    <ul class="submenu">
+                      {{- range .Children }}
+                        <li>
+                          <a href="{{ .URL |relLangURL}}">{{ .Name }}</a>
+                        </li>
+                      {{- end }}
+                    </ul>
+                  </li>
+                {{- else }}
+                  <li>
+                    <a href="{{ .URL |relLangURL}}">{{ .Name }}</a>
+                  </li>
+                {{- end }}
               {{- end }}
             </ul>
           </li>
@@ -36,7 +49,7 @@
   {{ else if eq .Site.Language.Lang "pl" }}PL
   {{ else if eq .Site.Language.Lang "es" }}ES
   {{ else }}{{ .Site.Language.Lang | upper }}
-  {{ end }}
+  {{ end }} &#9662;
         </a>
         <ul class="lang-submenu">
           {{- range .Site.Languages }}

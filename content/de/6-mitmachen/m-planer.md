@@ -4,14 +4,36 @@ url = '/de/mitmachen/m-planer'
 title = 'Als Planer:in bewerben'
 +++
 
-<div class="contact-content">
-<p style="font-size: 30px; font-weight: bold;">Erfassungsformular <br> für Fachplaner:in im Bereich Denkmalpflege</p>
+Werden Sie Teil einer wachsenden Community, die zeigt, was in der nachhaltigen Sanierung denkmalgeschützter Gebäude möglich ist.
+
+<div style="background-color: #f5f5f5; padding: 20px; margin: 20px 0; border-radius: 8px;">
+  <h2 id="funktioniert" style="margin-top: 0;">So funktioniert es</h2>
+
+  <u>Schritt 1</u> <br>
+  Füllen Sie das <a href="#erfassungsformular">Online-Formular</a> aus und stellen Sie Ihre Firma vor.
+
+  <u>Schritt 2</u> <br>
+  Nach einer kurzen Prüfung durch das Erlebe-Erbe-Team erhalten Sie einen Upload-Link für Bilder und Pläne.
+  Über diesen Link können Sie Ihre Unterlagen einfach hochladen.
+
+  <u>Schritt 3</u> <br>
+  Nach der Freigabe wird Ihr Eintrag auf der Plattform veröffentlicht.
+
+  <br>
+  <strong>Die Teilnahme ist kostenlos.</strong>
+</div>
 
 <br>
+<br>
+<br>
+
+<div class="contact-content">
+<p id="erfassungsformular" style="font-size: 30px; font-weight: bold;">Erfassungsformular <br> für Fachplaner:in im Bereich Denkmalpflege</p>
+
 <br>
 
 <!-- Contact form: replace the action URL with your Formspree endpoint (https://formspree.io/f/YOUR_FORM_ID) or follow the Netlify instructions below -->
-<form id="contact-form" method="POST" action="https://formspree.io/f/mqedzqpl">
+<form id="planer-form" method="POST" action="https://formspree.io/f/mpqjlekq">
   <!-- Redirect to thank-you page after submission -->
   <input type="hidden" name="_next" value="/de/6-mitmachen/danke/">
 <b>1. Fachplaner</b>
@@ -116,26 +138,26 @@ Kontaktperson
 
 <b>6. Anlagen</b>
 
-Firmenlogo (max. 3 MB) *
+6.1. Firmenlogo / Bild *
 
-<label for="portfolio">Firmenlogo (JPG/PNG)</label>
+6.2. Bild- und Plananlage für Referenzprojekte *
+
+<u>Direkt-Upload (optional)</u> <br>
+Laden Sie Ihre Dateien direkt im Formular hoch (max. 3 MB).
+
+<label for="portfolio">Dateien hochladen</label>
   <input type="file"
          name="attachments[]"
-         id="firmenlogo"
+         id="file"
          accept="image/*,.pdf"
          multiple>
 
-Bild- und Plananlage für Best-Practice-Projekte *
+<u>Weitere Dateien</u> <br>
+Nach Prüfung Ihrer Angaben erhalten Sie einen persönlichen Upload-Link (Dropbox), über den Sie zusätzliche Unterlagen einfach und ohne Registrierung hochladen können.
 
-<label for="fileLink">
- Laden Sie größere Dateien z. B. bei WeTransfer, Google Drive oder Dropbox hoch und fügen Sie den Download-Link hier ein. 
+<u>Hinweis</u> <br>
+Bitte laden Sie alle relevanten Materialien hoch (Fotos, Pläne, Dokumentation) und benennen Sie die Dateien eindeutig.
 
-</label>
-<input type="text" name="fileLink" id="fileLink"
-       placeholder="https://…">
-       <br>
-
-Alternativ können Sie uns die Dateien auch per E-Mail an [info@erlebeerbe.com](mailto:info@erlebeerbe.com) zusenden.
 
 <br>
 

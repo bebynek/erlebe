@@ -57,8 +57,7 @@ Primärenergiebedarf: XXX
 **Verwendete Produkte**
 
 
-[Historisierende Holzfenster]({{< ref "Fenster FF.md" >}})
-
+{{< card ref="3-losungen/produkte/fenster-ff.md" >}}
 
 
 

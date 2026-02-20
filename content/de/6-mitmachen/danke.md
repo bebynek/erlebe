@@ -7,3 +7,5 @@ title = 'Vielen Dank'
 <p style="font-size: 30px; font-weight: bold;">Vielen Dank</p>
 
 Wir haben Ihre Anmeldung erhalten und melden uns bald bei Ihnen.
+
+Vielen Dank für Ihren Beitrag. Sie helfen dabei, Denkmalpflege sichtbar zu machen und wertvolles Wissen zu teilen.

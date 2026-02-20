@@ -52,6 +52,24 @@ pluralizeListTitles = false
       weight = 3
 
     [[languages.de.menu.main]]
+      name = "Fachleute"
+      url = "/3-losungen/fachleute/"
+      parent = "Lösungen"
+      weight = 1
+
+    [[languages.de.menu.main]]
+      name = "Handwerk"
+      url = "/3-losungen/handwerk/"
+      parent = "Lösungen"
+      weight = 2
+
+    [[languages.de.menu.main]]
+      name = "Produkte"
+      url = "/3-losungen/produkte/"
+      parent = "Lösungen"
+      weight = 3
+
+    [[languages.de.menu.main]]
       name = "Mitmachen"
       url = "/6-mitmachen/"
       parent = "Plattform"
