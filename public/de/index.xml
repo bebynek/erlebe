@@ -62,7 +62,7 @@
       <link>http://localhost:1313/de/mitmachen/m-interview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/de/mitmachen/m-interview/</guid>
-      <description>&lt;div class=&#34;contact-content&#34;&gt;&#xA;&lt;p style=&#34;font-size: 30px; font-weight: bold; &#34;&gt;Interview-Reihe &lt;br&gt;Gesichter der Denkmalpflege&lt;/p&gt;&lt;/p&gt;&#xA;&lt;!-- modify this form HTML and place wherever you want your form --&gt;&#xA;&lt;form&#xA;  action=&#34;https://formspree.io/f/mykdpaav&#34;&#xA;  method=&#34;POST&#34;&#xA;  enctype=&#34;multipart/form-data&#34;&#xA;&gt;&#xA;  &lt;label&gt;&#xA;    Your email:&#xA;    &lt;input type=&#34;email&#34; name=&#34;email&#34;&gt;&#xA;  &lt;/label&gt;&#xA;  &lt;label&gt;&#xA;    Your file:&#xA;    &lt;input type=&#34;file&#34; name=&#34;upload&#34;&gt;&#xA;  &lt;/label&gt;&#xA;  &lt;button type=&#34;submit&#34;&gt;Send&lt;/button&gt;&#xA;&lt;/form&gt;</description>
+      <description>&lt;div class=&#34;contact-content&#34;&gt;&#xA;&lt;p style=&#34;font-size: 30px; font-weight: bold; &#34;&gt;Interview-Reihe &lt;br&gt;Gesichter der Denkmalpflege&lt;/p&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Handwerksbetrieb eintragen</title>
