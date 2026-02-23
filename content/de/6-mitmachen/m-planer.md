@@ -141,18 +141,16 @@ Kontaktperson
 6.1. Firmenlogo / Bild *
 
 6.2. Bild- und Plananlage für Referenzprojekte *
-
+<!--
 <u>Direkt-Upload (optional)</u> <br>
 Laden Sie Ihre Dateien direkt im Formular hoch (max. 3 MB).
 
-<label for="portfolio">Dateien hochladen</label>
-  <input type="file"
-         name="attachments[]"
-         id="file"
-         accept="image/*,.pdf"
-         multiple>
+ <label>
+    Dateien hochladen    
+    <input type="file" name="upload">
+  </label>-->
 
-<u>Weitere Dateien</u> <br>
+<u>Dateien hochladen</u> <br>
 Nach Prüfung Ihrer Angaben erhalten Sie einen persönlichen Upload-Link (Dropbox), über den Sie zusätzliche Unterlagen einfach und ohne Registrierung hochladen können.
 
 <u>Hinweis</u> <br>

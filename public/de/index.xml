@@ -62,7 +62,7 @@
       <link>http://localhost:1313/de/mitmachen/m-interview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/de/mitmachen/m-interview/</guid>
-      <description>&lt;div class=&#34;contact-content&#34;&gt;&#xA;&lt;p style=&#34;font-size: 30px; font-weight: bold; &#34;&gt;Interview-Reihe &lt;br&gt;Gesichter der Denkmalpflege&lt;/p&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Diese Seite befindet sich derzeit in Bearbeitung.&lt;/strong&gt;&lt;/p&gt;</description>
+      <description>&lt;div class=&#34;contact-content&#34;&gt;&#xA;&lt;p style=&#34;font-size: 30px; font-weight: bold; &#34;&gt;Interview-Reihe &lt;br&gt;Gesichter der Denkmalpflege&lt;/p&gt;&lt;/p&gt;&#xA;&lt;!-- modify this form HTML and place wherever you want your form --&gt;&#xA;&lt;form&#xA;  action=&#34;https://formspree.io/f/mykdpaav&#34;&#xA;  method=&#34;POST&#34;&#xA;  enctype=&#34;multipart/form-data&#34;&#xA;&gt;&#xA;  &lt;label&gt;&#xA;    Your email:&#xA;    &lt;input type=&#34;email&#34; name=&#34;email&#34;&gt;&#xA;  &lt;/label&gt;&#xA;  &lt;label&gt;&#xA;    Your file:&#xA;    &lt;input type=&#34;file&#34; name=&#34;upload&#34;&gt;&#xA;  &lt;/label&gt;&#xA;  &lt;button type=&#34;submit&#34;&gt;Send&lt;/button&gt;&#xA;&lt;/form&gt;</description>
     </item>
     <item>
       <title>Handwerksbetrieb eintragen</title>
@@ -83,7 +83,7 @@
       <link>http://localhost:1313/de/mitmachen/m-projekt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/de/mitmachen/m-projekt/</guid>
-      <description>&lt;p&gt;Werden Sie Teil einer wachsenden Community, die zeigt, was in der nachhaltigen Sanierung denkmalgeschützter Gebäude möglich ist.&lt;/p&gt;&#xA;&lt;div style=&#34;background-color: #f5f5f5; padding: 20px; margin: 20px 0; border-radius: 8px;&#34;&gt;&#xA;  &lt;h2 id=&#34;funktioniert&#34; style=&#34;margin-top: 0;&#34;&gt;So funktioniert es&lt;/h2&gt;&#xA;&lt;p&gt;&lt;u&gt;Schritt 1&lt;/u&gt; &lt;br&gt;&#xA;Füllen Sie das &lt;a href=&#34;#erfassungsformular&#34;&gt;Online-Formular&lt;/a&gt; aus und stellen Sie Ihr Projekt vor.&lt;/p&gt;&#xA;&lt;p&gt;&lt;u&gt;Schritt 2&lt;/u&gt; &lt;br&gt;&#xA;Nach einer kurzen Prüfung durch das Erlebe-Erbe-Team erhalten Sie einen Upload-Link für Bilder und Pläne.&#xA;Über diesen Link können Sie Ihre Unterlagen einfach hochladen.&lt;/p&gt;&#xA;&lt;p&gt;&lt;u&gt;Schritt 3&lt;/u&gt; &lt;br&gt;&#xA;Nach der Freigabe wird Ihr Eintrag auf der Plattform veröffentlicht.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Werden Sie Teil einer wachsenden Community, die zeigt, was in der nachhaltigen Sanierung denkmalgeschützter Gebäude möglich ist.&lt;/p&gt;&#xA;&lt;div style=&#34;background-color: #f5f5f5; padding: 20px; margin: 20px 0; border-radius: 8px;&#34;&gt;&#xA;  &lt;h2 id=&#34;funktioniert&#34; style=&#34;margin-top: 0;&#34;&gt;So funktioniert es&lt;/h2&gt;&#xA;&lt;p&gt;&lt;u&gt;Schritt 1&lt;/u&gt; &lt;br&gt;&#xA;Füllen Sie das &lt;a href=&#34;#erfassungsformular&#34;&gt;Online-Formular&lt;/a&gt; aus und stellen Sie Ihr Projekt vor.&lt;/p&gt;&#xA;&lt;p&gt;&lt;u&gt;Schritt 2&lt;/u&gt; &lt;br&gt;&#xA;Nach einer kurzen Prüfung durch das Erlebe-Erbe-Team erhalten Sie einen persönlichen Upload-Link für Bilder und Pläne.&#xA;Über diesen Link können Sie Ihre Unterlagen einfach hochladen.&lt;/p&gt;&#xA;&lt;p&gt;&lt;u&gt;Schritt 3&lt;/u&gt; &lt;br&gt;&#xA;Nach der Freigabe wird Ihr Eintrag auf der Plattform veröffentlicht.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Vielen Dank</title>

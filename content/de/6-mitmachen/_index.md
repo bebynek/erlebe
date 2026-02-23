@@ -96,7 +96,7 @@ Gesichter der Denkmalpflege ist eine Interviewreihe, die die Menschen in den Mit
 Füllen Sie das Online-Formular aus und stellen Sie sich, Ihr Projekt oder Ihre Produkte vor.
 
 <u>Schritt 2</u> <br>
-Nach einer kurzen Prüfung durch das Erlebe-Erbe-Team erhalten Sie einen Upload-Link für Bilder und Pläne.
+Nach einer kurzen Prüfung durch das Erlebe-Erbe-Team erhalten Sie einen persönlichen Upload-Link für Bilder und Pläne.
 Über diesen Link können Sie Ihre Unterlagen einfach hochladen.
 
 <u>Schritt 3</u> <br>

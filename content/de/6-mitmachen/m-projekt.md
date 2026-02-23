@@ -13,7 +13,7 @@ Werden Sie Teil einer wachsenden Community, die zeigt, was in der nachhaltigen S
   Füllen Sie das <a href="#erfassungsformular">Online-Formular</a> aus und stellen Sie Ihr Projekt vor.
 
   <u>Schritt 2</u> <br>
-  Nach einer kurzen Prüfung durch das Erlebe-Erbe-Team erhalten Sie einen Upload-Link für Bilder und Pläne.
+  Nach einer kurzen Prüfung durch das Erlebe-Erbe-Team erhalten Sie einen persönlichen Upload-Link für Bilder und Pläne.
   Über diesen Link können Sie Ihre Unterlagen einfach hochladen.
 
   <u>Schritt 3</u> <br>
@@ -137,17 +137,7 @@ Werden Sie Teil einer wachsenden Community, die zeigt, was in der nachhaltigen S
 
 <b>6. Bild- und Plananlage</b>
 
-<u>Direkt-Upload (optional)</u> <br>
-Laden Sie Ihre Dateien direkt im Formular hoch (max. 3 MB).
-
-<label for="portfolio">Dateien hochladen</label>
-  <input type="file"
-         name="attachments[]"
-         id="file"
-         accept="image/*,.pdf"
-         multiple>
-
-<u>Weitere Dateien</u> <br>
+<u>Dateien hochladen</u> <br>
 Nach Prüfung Ihrer Angaben erhalten Sie einen persönlichen Upload-Link (Dropbox), über den Sie zusätzliche Unterlagen einfach und ohne Registrierung hochladen können.
 
 <u>Hinweis</u> <br>

@@ -95,6 +95,8 @@
   </url><url>
     <loc>http://localhost:1313/de/plattform/</loc>
   </url><url>
+    <loc>http://localhost:1313/de/mitmachen/m-produkt/</loc>
+  </url><url>
     <loc>http://localhost:1313/de/mitmachen/m-projekt/</loc>
   </url><url>
     <loc>http://localhost:1313/de/tags/</loc>
