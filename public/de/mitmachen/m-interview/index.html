@@ -96,9 +96,95 @@
 
   
     <main class="h-entry e-content container col">
-        <div class="contact-content">
+        <p>Gesichter der Denkmalpflege ist eine Interviewreihe, die die Menschen in den Mittelpunkt stellt, die hinter den Denkmälern und der Denkmalpflege stehen: Bauherren, Planer, Handwerker, Restauratoren, Hersteller von Bauprodukten. In kurzen Porträts geben sie Einblicke in ihre Motivation, ihre Arbeit und ihre größten Herausforderungen.</p>
+<p>Die Interviews werden auf der Plattform Erlebe Erbe sowie in unseren Social-Media-Kanälen und im Newsletter veröffentlicht.</p>
+<div style="background-color: #f5f5f5; padding: 20px; margin: 20px 0; border-radius: 8px;">
+  <h2 id="funktioniert" style="margin-top: 0;">So funktioniert es</h2>
+<p><u>Schritt 1</u> <br>
+Beantworten Sie bitte mindestens zwei der unten stehenden Fragen. Es steht Ihnen frei, die Fragen auszuwählen, die Sie beantworten möchten.</p>
+<p>Das Interview kann auch persönlich oder per Videokonferenz durchgeführt werden.</p>
+<p>Bei Interesse schreiben Sie bitte an: <a href="mailto:info@erlebeerbe.com">info@erlebeerbe.com</a>.</p>
+<p><u>Schritt 2</u> <br>
+Nach dem Absenden des Formulars erhalten Sie einen persönlichen Upload-Link. Laden Sie bitte über diesen Link ein Foto von Ihnen ein.</p>
+<p><u>Schritt 3</u> <br>
+Nach dem Erhalt des Bildmaterials wird das Intrview auf der Plattform veröffentlicht.</p>
+  <br>
+  <strong>Die Teilnahme ist kostenlos.</strong>
+</div>
+<div class="contact-content">
 <p style="font-size: 30px; font-weight: bold; ">Interview-Reihe <br>Gesichter der Denkmalpflege</p></p>
-
+<br>
+<!-- Contact form: replace the action URL with your Formspree endpoint (https://formspree.io/f/YOUR_FORM_ID) or follow the Netlify instructions below -->
+<form id="planer-form" method="POST" action="https://formspree.io/f/mpqjlekq">
+  <!-- Redirect to thank-you page after submission -->
+  <input type="hidden" name="_next" value="/de/6-mitmachen/danke/">
+<b>1. Angaben zur Person</b>
+<p><label for="name">Name *</label>
+<input id="name" name="name" type="text" required></p>
+<p><label for="rolle">Rolle / Tätigkeit * <br>z.B. Architekt:in, Restaurator:in, Handerwerker:in, Bauherr:in</label>
+<input id="rolle" name="rolle" type="text" required></p>
+<p><label for="firma">Unternehmen / Organisation</label>
+<input id="firma" name="firma" type="text"></p>
+<p><label for="standort">Standort</label>
+<input id="standort" name="standort" type="text"></p>
+<p><label for="website">Website</label>
+<input id="website" name="website" type="text"></p>
+<p><label class="consent"><input type="checkbox" name="consent-verlinkung"> Ich möchte mit meiner Website / meinem Profil verlinkt werden.
+</label></p>
+  <br>
+  <br>
+<p><b>2. Kontakt (nicht öffentlich)</b></p>
+<p><label for="mail">E-Mail *</label>
+<input id="website" name="website" type="text" required></p>
+<p><label for="telefon">Telefon</label>
+<input id="telefon" name="telefon" type="text"></p>
+  <br>
+  <br>
+<p><b>3. Interview</b></p>
+<p><label for="f1">3.1. Wie berücksichtigen Sie in Ihrer Planung / Arbeit den Denkmalschutz, was ist Ihnen besonders wichtig?</label></p>
+  <textarea id="f1" name="f1" rows="12"></textarea>
+<p><label for="f2">3.2. Was war bei Ihren Arbeiten mit denkmalgeschützten Gebäuden die größte Herausforderung und wie haben Sie sie gelöst?</label></p>
+  <textarea id="f2" name="f2" rows="12"></textarea>
+<p><label for="f3">3.3. Welche Rolle spielen moderne Technologien, wie z.B. digitale Planungswerkzeuge bei der Sanierung von Denkmäler?</label></p>
+  <textarea id="f3" name="f3" rows="12"></textarea>
+<p><label for="f4">3.4. Welche Entwicklungen oder Trends in der Denkmalpflege sehen Sie kritisch oder positiv?</label></p>
+  <textarea id="f4" name="f4" rows="12"></textarea>
+<p><label for="f5">3.5. Haben Sie ein bestimmtes Projekt, das Sie als besonders gelungen im Bereich der Denkmalpflege betrachten?</label></p>
+  <textarea id="f5" name="f5" rows="12"></textarea>
+<p><label for="f6">3.6. Was würden Sie Bauherren bei der Planung einer Sanierungsmaßnahme empfehlen?</label></p>
+  <textarea id="f6" name="f6" rows="12"></textarea>  
+<br>
+<br>
+<p><b>4. Bild</b></p>
+<p><u>Dateien hochladen</u> <br>
+Nach dem Absenden des Formulars erhalten Sie einen persönlichen Upload-Link (Dropbox), über den Sie ein Foto von Ihnen einfach und ohne Registrierung hochladen können.</p>
+<br>
+<br>
+<p><b>5. Einwilligung zur Veröffentlichung</b></p>
+<p><label class="consent"><input type="checkbox" name="consent" required> Ich willige in die Aufnahme meiner Angaben in die Datenbank der Plattform Erlebe Erbe ein. Ich erkläre mich damit einverstanden, dass meine Daten, einschließlich der eingereichten Bilder, im Rahmen der Aufgaben der Plattform veröffentlicht und verarbeitet werden.
+Ich versichere, dass ich über die erforderlichen Nutzungsrechte an allen eingereichten Bildern und Unterlagen verfüge, und bestätige, die <a href="/datenschutz/" target="_blank" rel="noopener noreferrer"> Datenschutzerklärung </a> gelesen und verstanden zu haben. *
+</label></p>
+<p><button type="submit">Senden</button></p>
+</form>
+<p><small>* Pflichtfelder</small></p>
+<script>
+const form = document.getElementById('contact-form');
+form.addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const data = new FormData(form);
+  const res = await fetch(form.action, {
+    method: form.method,
+    body: data,
+    headers: { 'Accept': 'application/json' }
+  });
+  if (res.ok) {
+    window.location.href = "/de/6-mitmachen/danke/";
+  } else {
+    alert("Fehler beim Senden. Bitte erneut versuchen.");
+  }
+});
+</script>
+</div>
         
     </main>
 <footer>
@@ -210,7 +296,7 @@
         
         "title": "",
             "tags": [],
-    "content": "Datenschutz\nDer Verantwortliche im Sinne der Datenschutz-Grundverordnung (DSGVO) und anderer nationaler Datenschutzgesetze ist: A. Bebynek-Bielanska, Kappenzipfelgasse 8, 87719 Mindelheim, Deutschland, E-Mail: info@erlebeerbe.com.\nUm Ihren Besuch so benutzerfreundlich wie möglich zu gestalten und sämtliche verfügbaren Funktionen anbieten zu können, erheben wir eine Reihe von Daten und Informationen des Geräts, mit dem Sie unsere Website aufgerufen haben. Dabei handelt es sich um folgende Daten: IP-Adresse, Betriebssystem, Browsertyp und -version, Datum und Uhrzeit des Zugriffs und Ähnliches. Eine Auswertung dieser Daten zu Marketingzwecken findet in diesem Zusammenhang nicht statt.\nAlle personenbezogenen Daten, die wir während Ihres Besuchs durch den Einsatz von Sitzungs-Cookies gesammelt haben, werden automatisch gelöscht, sobald der Zweck für ihre Erhebung erfüllt ist. Die Sitzungsdaten werden demnach so lange gespeichert, bis Sie Ihre Sitzung beenden (durch das Verlassen bzw. Schließen der Website).\nIm Sinne der DSGVO zählen Sie als Betroffener, wenn personenbezogene Daten, die Sie betreffen, von uns verarbeitet werden. Aus diesem Grund können Sie von verschiedenen Betroffenenrechten Gebrauch machen, die in der Datenschutz-Grundverordnung verankert sind. Hierbei handelt es sich um das Auskunftsrecht (Artikel 15 DSGVO), das Recht auf Berichtigung (Artikel 16 DSGVO), das Recht auf Löschung (Artikel 17 DSGVO), das Recht auf Einschränkung der Verarbeitung (Artikel 18 DSGVO), das Widerspruchsrecht (Artikel 21 DSGVO), das Recht auf Beschwerde bei einer Aufsichtsbehörde (Artikel 77 DSGVO) sowie das Recht auf Datenübertragbarkeit (Artikel 20 DSGVO).\nÄnderung unserer Datenschutzbestimmungen\nWir behalten uns vor, diese Datenschutzerklärung gelegentlich anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht.\nFragen zum Datenschutz\nWenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail an info@erlebeerbe.com.\n", 
+    "content": "Datenschutz\nDer Verantwortliche im Sinne der Datenschutz-Grundverordnung (DSGVO) und anderer nationaler Datenschutzgesetze ist: A. Bebynek-Bielanska, Kappenzipfelgasse 8, 87719 Mindelheim, Deutschland, E-Mail: info@erlebeerbe.com.\nUm Ihren Besuch so benutzerfreundlich wie möglich zu gestalten und sämtliche verfügbaren Funktionen anbieten zu können, erheben wir eine Reihe von Daten und Informationen des Geräts, mit dem Sie unsere Website aufgerufen haben. Dabei handelt es sich um folgende Daten: IP-Adresse, Betriebssystem, Browsertyp und -version, Datum und Uhrzeit des Zugriffs und Ähnliches. Eine Auswertung dieser Daten zu Marketingzwecken findet in diesem Zusammenhang nicht statt.\nAlle personenbezogenen Daten, die wir während Ihres Besuchs durch den Einsatz von Sitzungs-Cookies gesammelt haben, werden automatisch gelöscht, sobald der Zweck für ihre Erhebung erfüllt ist. Die Sitzungsdaten werden demnach so lange gespeichert, bis Sie Ihre Sitzung beenden (durch das Verlassen bzw. Schließen der Website).\nIm Sinne der DSGVO zählen Sie als Betroffener, wenn personenbezogene Daten, die Sie betreffen, von uns verarbeitet werden. Aus diesem Grund können Sie von verschiedenen Betroffenenrechten Gebrauch machen, die in der Datenschutz-Grundverordnung verankert sind. Hierbei handelt es sich um das Auskunftsrecht (Artikel 15 DSGVO), das Recht auf Berichtigung (Artikel 16 DSGVO), das Recht auf Löschung (Artikel 17 DSGVO), das Recht auf Einschränkung der Verarbeitung (Artikel 18 DSGVO), das Widerspruchsrecht (Artikel 21 DSGVO), das Recht auf Beschwerde bei einer Aufsichtsbehörde (Artikel 77 DSGVO) sowie das Recht auf Datenübertragbarkeit (Artikel 20 DSGVO).\nVerarbeitung von Formularanfragen (Formspree)\nFür die Bereitstellung und Verarbeitung unserer Online-Formulare nutzen wir den Dienst Formspree (Formspree Inc., USA). Wenn Sie uns über ein Formular kontaktieren oder Daten übermitteln, werden die von Ihnen eingegebenen Informationen (z. B. Name, E-Mail-Adresse, Inhalte Ihrer Anfrage sowie ggf. hochgeladene Dateien) an Formspree übermittelt und dort verarbeitet, um Ihre Anfrage zu bearbeiten. Die Verarbeitung erfolgt auf Grundlage Ihrer Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO. Formspree kann die Daten auf Servern in den USA verarbeiten. Es kann daher nicht ausgeschlossen werden, dass personenbezogene Daten in ein Drittland übermittelt werden. In solchen Fällen erfolgt die Übermittlung auf Grundlage geeigneter Garantien gemäß Art. 46 DSGVO. Weitere Informationen zum Datenschutz bei Formspree finden Sie unter: https://formspree.io/legal/privacy-policy/\nÄnderung unserer Datenschutzbestimmungen\nWir behalten uns vor, diese Datenschutzerklärung gelegentlich anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht.\nFragen zum Datenschutz\nWenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail an info@erlebeerbe.com.\n", 
     "url": "http:\/\/localhost:1313\/datenschutz\/"
         },
     
@@ -237,7 +323,7 @@
         
         "title": "Als Planer:in bewerben",
             "tags": [],
-    "content": "Werden Sie Teil einer wachsenden Community, die zeigt, was in der nachhaltigen Sanierung denkmalgeschützter Gebäude möglich ist.\nSo funktioniert es Schritt 1 Füllen Sie das Online-Formular aus und stellen Sie Ihre Firma vor.\nSchritt 2 Nach einer kurzen Prüfung durch das Erlebe-Erbe-Team erhalten Sie einen Upload-Link für Bilder und Pläne. Über diesen Link können Sie Ihre Unterlagen einfach hochladen.\nSchritt 3 Nach der Freigabe wird Ihr Eintrag auf der Plattform veröffentlicht.\nDie Teilnahme ist kostenlos. Erfassungsformular für Fachplaner:in im Bereich Denkmalpflege\n1. Fachplaner Firmenname * Strasse, Hausnummer * Postleitzahl, Ort * Website * 2. Fachliche Qualifikation \u0026 Spezialisierung Fachliche Qualifikation / Berufsbezeichnung * Zuständige Kammer/Verband * Spezialisierung Zertifikate / Zusatzqualifikationen 3. Firmenprofil Firmenprofil / Leistungsumfang *\n4. Referenzprojekte Denkmalpflege\nBitte geben Sie Informationen zu mindestens einem Projekt an.\nProjekt 1\nProjektname * Projektadresse * Leistungen / Besonderheiten *\nggf. Auszeichnungen oder Anerkennungen Projekt 2 (optional)\nProjektname Projektadresse Leistungen / Besonderheiten\nggf. Auszeichnungen oder Anerkennungen Projekt 3 (optional)\nProjektname Projektadresse Leistungen / Besonderheiten\nggf. Auszeichnungen oder Anerkennungen 5. Kontaktmöglichkeiten\nKontaktperson\nName * Telefon * E-Mail * 6. Anlagen\n6.1. Firmenlogo / Bild *\n6.2. Bild- und Plananlage für Referenzprojekte *\nDirekt-Upload (optional) Laden Sie Ihre Dateien direkt im Formular hoch (max. 3 MB).\nDateien hochladen Weitere Dateien hochladen Nach Prüfung Ihrer Angaben erhalten Sie einen persönlichen Upload-Link (Dropbox), über den Sie zusätzliche Unterlagen einfach und ohne Registrierung hochladen können.\nHinweis Bitte laden Sie alle relevanten Materialien hoch (Fotos, Pläne, Dokumentation) und benennen Sie die Dateien eindeutig.\n7. Einwilligung zur Veröffentlichung\nIch willige in die Aufnahme meiner Angaben in die Datenbank der Plattform Erlebe Erbe ein. Ich erkläre mich damit einverstanden, dass meine Daten, einschließlich der eingereichten Bilder und Unterlagen, im Rahmen der Aufgaben der Plattform veröffentlicht und verarbeitet werden. Ich versichere, dass ich über die erforderlichen Nutzungsrechte an allen eingereichten Bildern und Unterlagen verfüge, und bestätige, die Datenschutzerklärung gelesen und verstanden zu haben. * Bitte stellen Sie sicher, dass die Bauherrschaft mit der Veröffentlichung der eingereichten Projektunterlagen einverstanden ist. Gerne können Sie hierfür unsere Vorlage verwenden. PDF herunterladen. Ich bestätige, dass das Einverständnis der Eigentümerschaft zur Veröffentlichung vorliegt. * Senden\n* Pflichtfelder\n", 
+    "content": "Werden Sie Teil einer wachsenden Community, die zeigt, was in der nachhaltigen Sanierung denkmalgeschützter Gebäude möglich ist.\nSo funktioniert es Schritt 1 Füllen Sie das Online-Formular aus und stellen Sie Ihre Firma vor.\nSchritt 2 Nach einer kurzen Prüfung durch das Erlebe-Erbe-Team erhalten Sie einen Upload-Link für Bilder und Pläne. Über diesen Link können Sie Ihre Unterlagen einfach hochladen.\nSchritt 3 Nach der Freigabe wird Ihr Eintrag auf der Plattform veröffentlicht.\nDie Teilnahme ist kostenlos. Erfassungsformular für Fachplaner:in im Bereich Denkmalpflege\n1. Fachplaner Firmenname * Strasse, Hausnummer * Postleitzahl, Ort * Website * 2. Fachliche Qualifikation \u0026 Spezialisierung Fachliche Qualifikation / Berufsbezeichnung * Zuständige Kammer/Verband * Spezialisierung Zertifikate / Zusatzqualifikationen 3. Firmenprofil Firmenprofil / Leistungsumfang *\n4. Referenzprojekte Denkmalpflege\nBitte geben Sie Informationen zu mindestens einem Projekt an.\nProjekt 1\nProjektname * Projektadresse * Leistungen / Besonderheiten *\nggf. Auszeichnungen oder Anerkennungen Projekt 2 (optional)\nProjektname Projektadresse Leistungen / Besonderheiten\nggf. Auszeichnungen oder Anerkennungen Projekt 3 (optional)\nProjektname Projektadresse Leistungen / Besonderheiten\nggf. Auszeichnungen oder Anerkennungen 5. Kontaktmöglichkeiten\nKontaktperson\nName * Telefon * E-Mail * 6. Anlagen\n6.1. Firmenlogo / Bild *\n6.2. Bild- und Plananlage für Referenzprojekte *\nDateien hochladen Nach Prüfung Ihrer Angaben erhalten Sie einen persönlichen Upload-Link (Dropbox), über den Sie zusätzliche Unterlagen einfach und ohne Registrierung hochladen können.\nHinweis Bitte laden Sie alle relevanten Materialien hoch (Fotos, Pläne, Dokumentation) und benennen Sie die Dateien eindeutig.\n7. Einwilligung zur Veröffentlichung\nIch willige in die Aufnahme meiner Angaben in die Datenbank der Plattform Erlebe Erbe ein. Ich erkläre mich damit einverstanden, dass meine Daten, einschließlich der eingereichten Bilder und Unterlagen, im Rahmen der Aufgaben der Plattform veröffentlicht und verarbeitet werden. Ich versichere, dass ich über die erforderlichen Nutzungsrechte an allen eingereichten Bildern und Unterlagen verfüge, und bestätige, die Datenschutzerklärung gelesen und verstanden zu haben. * Bitte stellen Sie sicher, dass die Bauherrschaft mit der Veröffentlichung der eingereichten Projektunterlagen einverstanden ist. Gerne können Sie hierfür unsere Vorlage verwenden. PDF herunterladen. Ich bestätige, dass das Einverständnis der Eigentümerschaft zur Veröffentlichung vorliegt. * Senden\n* Pflichtfelder\n", 
     "url": "http:\/\/localhost:1313\/de\/mitmachen\/m-planer\/"
         },
     
@@ -264,7 +350,7 @@
         
         "title": "Gesichter der Denkmalpflege",
             "tags": [],
-    "content": " Interview-Reihe Gesichter der Denkmalpflege\n", 
+    "content": "Gesichter der Denkmalpflege ist eine Interviewreihe, die die Menschen in den Mittelpunkt stellt, die hinter den Denkmälern und der Denkmalpflege stehen: Bauherren, Planer, Handwerker, Restauratoren, Hersteller von Bauprodukten. In kurzen Porträts geben sie Einblicke in ihre Motivation, ihre Arbeit und ihre größten Herausforderungen.\nDie Interviews werden auf der Plattform Erlebe Erbe sowie in unseren Social-Media-Kanälen und im Newsletter veröffentlicht.\nSo funktioniert es Schritt 1 Beantworten Sie bitte mindestens zwei der unten stehenden Fragen. Es steht Ihnen frei, die Fragen auszuwählen, die Sie beantworten möchten.\nDas Interview kann auch persönlich oder per Videokonferenz durchgeführt werden.\nBei Interesse schreiben Sie bitte an: info@erlebeerbe.com.\nSchritt 2 Nach dem Absenden des Formulars erhalten Sie einen persönlichen Upload-Link. Laden Sie bitte über diesen Link ein Foto von Ihnen ein.\nSchritt 3 Nach dem Erhalt des Bildmaterials wird das Intrview auf der Plattform veröffentlicht.\nDie Teilnahme ist kostenlos. Interview-Reihe Gesichter der Denkmalpflege\n1. Angaben zur Person Name * Rolle / Tätigkeit * z.B. Architekt:in, Restaurator:in, Handerwerker:in, Bauherr:in Unternehmen / Organisation Standort Website Ich möchte mit meiner Website / meinem Profil verlinkt werden. 2. Kontakt (nicht öffentlich)\nE-Mail * Telefon 3. Interview\n3.1. Wie berücksichtigen Sie in Ihrer Planung / Arbeit den Denkmalschutz, was ist Ihnen besonders wichtig?\n3.2. Was war bei Ihren Arbeiten mit denkmalgeschützten Gebäuden die größte Herausforderung und wie haben Sie sie gelöst?\n3.3. Welche Rolle spielen moderne Technologien, wie z.B. digitale Planungswerkzeuge bei der Sanierung von Denkmäler?\n3.4. Welche Entwicklungen oder Trends in der Denkmalpflege sehen Sie kritisch oder positiv?\n3.5. Haben Sie ein bestimmtes Projekt, das Sie als besonders gelungen im Bereich der Denkmalpflege betrachten?\n3.6. Was würden Sie Bauherren bei der Planung einer Sanierungsmaßnahme empfehlen?\n4. Bild\nDateien hochladen Nach dem Absenden des Formulars erhalten Sie einen persönlichen Upload-Link (Dropbox), über den Sie ein Foto von Ihnen einfach und ohne Registrierung hochladen können.\n5. Einwilligung zur Veröffentlichung\nIch willige in die Aufnahme meiner Angaben in die Datenbank der Plattform Erlebe Erbe ein. Ich erkläre mich damit einverstanden, dass meine Daten, einschließlich der eingereichten Bilder, im Rahmen der Aufgaben der Plattform veröffentlicht und verarbeitet werden. Ich versichere, dass ich über die erforderlichen Nutzungsrechte an allen eingereichten Bildern und Unterlagen verfüge, und bestätige, die Datenschutzerklärung gelesen und verstanden zu haben. * Senden\n* Pflichtfelder\n", 
     "url": "http:\/\/localhost:1313\/de\/mitmachen\/m-interview\/"
         },
     

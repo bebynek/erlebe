@@ -26,6 +26,9 @@ Ich freue mich auf Ihre Anfrage.
   <label for="message">Nachricht</label>
   <textarea id="message" name="message" rows="24" required></textarea>
 
+<br>
+
+
   <label class="consent"><input type="checkbox" name="consent" required> Ich habe die <a href="/datenschutz/" target="_blank" rel="noopener noreferrer"> Datenschutzerklärung </a> gelesen und stimme zu, dass meine Angaben zur Bearbeitung meiner Anfrage verarbeitet werden.
   </a>
 </label>
