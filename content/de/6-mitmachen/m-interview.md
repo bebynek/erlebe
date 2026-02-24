@@ -35,7 +35,7 @@ Die Interviews werden auf der Plattform Erlebe Erbe sowie in unseren Social-Medi
 <br>
 
 <!-- Contact form: replace the action URL with your Formspree endpoint (https://formspree.io/f/YOUR_FORM_ID) or follow the Netlify instructions below -->
-<form id="planer-form" method="POST" action="https://formspree.io/f/mpqjlekq">
+<form id="planer-form" method="POST" action="https://formspree.io/f/mykdpaav">
   <!-- Redirect to thank-you page after submission -->
   <input type="hidden" name="_next" value="/de/6-mitmachen/danke/">
 <b>1. Angaben zur Person</b>
