@@ -1,0 +1,31 @@
+{{ $posts := where .Site.RegularPages "Section" "in" (slice "1-projekte" "2-wissen" "3-losungen" "4-news") }}
+
+{{ $posts = where $posts "Params.excludeFromHome" "!=" true }}
+
+{{ $posts = $posts.ByDate.Reverse }}
+
+<div class="cards" id="results">
+  {{ range first 4 $posts }}
+    {{ $page := . }}
+
+    <div class="card h-entry">
+      <a href="{{ $page.RelPermalink }}" class="u-url">
+
+        {{ with $page.Params.image }}
+          <img src="{{ . }}" alt="{{ $page.Title }}" class="u-photo">
+        {{ else }}
+          {{ partial "randImage" $page }}
+        {{ end }}
+
+        <div class="text">
+          <h2 class="p-name">{{ $page.Title }}</h2>
+          <p class="small e-content">
+            {{ $page.Summary | plainify | truncate 100 }}
+          </p>
+        </div>
+
+      </a>
+    </div>
+
+  {{ end }}
+</div>

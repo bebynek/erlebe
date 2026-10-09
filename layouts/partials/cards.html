@@ -1,8 +1,12 @@
+
 {{/* Prepare the list of posts to paginate */}}
 {{ $posts := cond .IsHome
   (where .Site.RegularPages "Section" "in" (slice "1-projekte" "2-wissen" "3-losungen" "4-news"))
   (cond .IsSection .RegularPages (where .Site.RegularPages "Section" .Section))
 }}
+{{ $posts = where $posts "Params.exclude" "!=" true }}
+{{ $posts = $posts.ByDate.Reverse }}
+
 {{ $paginator := .Paginate $posts }}
 
 <div class="cards" id="results">
