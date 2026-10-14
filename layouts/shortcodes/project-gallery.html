@@ -1,8 +1,9 @@
 
-{{ $path := "images/1-projekte/26-01" }}
+{{ $path := .Get "path" | default "images/1-projekte/26-01" }}
 {{ $files := readDir (printf "static/%s" $path) }}
-{{ $captionsPath := "content/de/1-projekte/26-01_captions.yaml" }}
+{{ $captionsPath := .Get "captions" | default "content/de/1-projekte/26-01_captions.yaml" }}
 {{ $captions := readFile $captionsPath | transform.Unmarshal }}
+
 
 <div class="gallery">
   {{ range sort $files "Name" }}
