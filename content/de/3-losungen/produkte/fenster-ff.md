@@ -1,6 +1,6 @@
 +++
 date = '2025-03-24T15:57:49+01:00'
-draft = false
+draft = true
 title = 'Historisierende Holzfenster'
 image = '/images/fensterff1.jpg'
 +++
