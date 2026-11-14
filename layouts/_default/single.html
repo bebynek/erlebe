@@ -10,7 +10,7 @@
     <main class="post h-entry container row">
         <div class="post">
             <div class="post-data row">
-                {{ $hideDate := in (slice "1-projekte" "3-losungen") .Section }}
+                {{ $hideDate := in (slice "3-losungen") .Section }}
                 {{ if not $hideDate }}
                 <time class="dt-published" datetime="{{ .Date }}">
                     <a class="u-url" href="{{ .Permalink }}">{{ .Date | time.Format ":date_medium" }}</a>
