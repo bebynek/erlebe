@@ -9,7 +9,7 @@ title = 'About'
 <p style="font-size: 30px; font-weight: bold;">About</p>
 
 
-**erlebeErbe** ist ein Projekt in der Gründungsphase, 
+**Erlebe Erbe** ist ein Projekt in der Gründungsphase, 
 das Architekten und Planer sowie Eigentümer denkmalgeschützter Gebäude bei der Planung nachhaltiger Baumaßnahmen und der Umsetzung innovativer Lösungen und neuer Technologien unterstützt. 
 <br>
 
