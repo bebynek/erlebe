@@ -27,6 +27,11 @@ pluralizeListTitles = false
   [languages.de.menu]
 
     [[languages.de.menu.main]]
+      name = "Einblicke"
+      url = "/0-einblicke/"
+      weight = 1
+
+    [[languages.de.menu.main]]
       name = "Plattform"
       url = "/plattform/"
       weight = 2

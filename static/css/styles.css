@@ -1187,3 +1187,19 @@ a.submenu-colored-item {
 
 
 
+
+
+/* Homepage introduction */
+.homepage-intro {
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.homepage-intro a,
+.homepage-intro a:visited,
+.homepage-intro a:hover,
+.homepage-intro a:focus {
+    color: var(--primary-text) !important;
+    font-weight: 700;
+}
